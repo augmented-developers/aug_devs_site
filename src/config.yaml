@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Augmented Developers
+  site: 'https://augmented-devs.com/'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Augmented Developers
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Augmented Developers - Cybernetically enhanced development"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Augmented Developers
     images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
+      - url: '~/assets/images/logo-aug-devs-original.png'
+        width: 1024
+        height: 1024
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@desireco'
+    site: '@desireco'
     cardType: summary_large_image
 
 i18n:
