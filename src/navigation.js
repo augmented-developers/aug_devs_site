@@ -8,19 +8,23 @@ export const headerData = {
     },
     {
       text: 'The Method',
-      href: '/',
+      href: getPermalink('/method'),
     },
     {
       text: 'Offer',
-      href: '/',
+      href: getPermalink('/offer'),
     },
     {
       text: 'Start',
-      href: '/',
+      href: getPermalink('/start'),
     },
     {
       text: 'Blog',
       href: getBlogPermalink(),
+    },
+    {
+      text: 'Example',
+      href: getPermalink('/homes/saas'),
     },
   ],
 };
