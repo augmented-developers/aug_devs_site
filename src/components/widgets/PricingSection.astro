@@ -1,5 +1,6 @@
 ---
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { Icon } from 'astro-icon/components';
 
 const {
   title = await Astro.slots.render('title'),
@@ -7,7 +8,7 @@ const {
   tagline = await Astro.slots.render('tagline'),
   image = await Astro.slots.render('image'),
   isReversed = false,
-
+  url = await Astro.slots.render('url') || "#",
   id,
   isDark = false,
   classes = {},
@@ -32,11 +33,11 @@ const {
           <slot />
         </p>
         <a
-          href="offer-mvp"
+          href={url}
           class="mt-8 inline-flex items-center gap-4 text-lg font-extrabold text-primary transition hover:text-secondary lg:mt-14"
         >
-          <span>Details</span>
-          <img src="/assets/svg/up-arrow.svg" />
+          <span>Start</span>
+          <Icon name="tabler:circle-arrow-up-right" class="w-8 h-8" />
         </a>
       </div>
     </div>

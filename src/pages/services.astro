@@ -64,36 +64,36 @@ const metadata = {
   classes={{ container: 'max-w-5xl' }}
 />
 
-  <Features2
-    title="Ongoing"
-    subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages. Our weekly prices for ongoing work on your project. "
-    columns={3}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'UI/UX Design',
-        description:
-          '$3500 per week.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Development',
-        description:
-          '$6500 per week.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Admin',
-        description:
-          '$1500 per week.',
-        icon: 'tabler:template',
-      },
-    ]}
-  />
+  <PricingSection
+  title="Ongoing engagement"
+  subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages."
+  url="/start"
+>
+<table class="w-full">
+<tr>
+  <th>Weeks</th>
+  <th>Price per Week</th>
+</tr>
+<tr>
+  <td>Week of prototyping and UI work</td>
+  <td>$3,500</td>
+</tr>
+<tr>
+  <td>Week of development</td>
+  <td>$6,500</td>
+</tr>
+<tr>
+  <td>Week for admin, configuration, maintenance</td>
+  <td>$1,500</td>
+</tr>
+</table>
+</PricingSection>
+
 
 <PricingSection
       title="MVP in 90 days"
       subtitle="We will follow our process as outlined in The Method to develop your MVP in 90 days."
+      url="/start"
 >
   <table class="w-full">
     <tr>
@@ -130,6 +130,7 @@ const metadata = {
 <PricingSection
       title="Micro Saas in 6 weeks"
       subtitle="We will follow our process as outlined in The Method to develop your Micro-Saas in 6 weeks."
+      url="/start"
 >
 <table class="w-full">
   <tr>
@@ -166,6 +167,7 @@ const metadata = {
 <PricingSection
       title="Company Website in 6 weeks"
       subtitle="We will follow our process as outlined in The Method to develop your website in 6 weeks."
+      url="/start"
 >
 <table class="w-full">
   <tr>
