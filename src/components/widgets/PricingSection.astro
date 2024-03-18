@@ -9,6 +9,7 @@ const {
   image = await Astro.slots.render('image'),
   isReversed = false,
   url = await Astro.slots.render('url') || "#",
+  tileColor = await Astro.slots.render('tileColor') || "background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)",
   id,
   isDark = false,
   classes = {},
@@ -20,7 +21,7 @@ const {
   <div class:list={['flex flex-col gap-8 md:gap-12 h-96', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}>
     <div
       class="mt-14 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-20 lg:grid-cols-1"
-      style="background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)"
+      style={tileColor}
     >
       <div class="mb-5 ltr:lg:text-left rtl:lg:text-right">
         <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
