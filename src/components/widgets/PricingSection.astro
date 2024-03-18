@@ -1,0 +1,44 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  image = await Astro.slots.render('image'),
+  isReversed = false,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
+  <div class:list={['flex flex-col gap-8 md:gap-12', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}>
+    <div
+      class="mt-14 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-20 lg:grid-cols-1"
+      style="background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)"
+    >
+      <div class="mb-5 ltr:lg:text-left rtl:lg:text-right">
+        <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
+          {title}
+        </h2>
+        <p class="mt-6 text-lg font-semibold text-muted">
+          {subtitle}
+        </p>
+        <p class="mt-6 text-lg font-semibold">
+          <slot />
+        </p>
+        <a
+          href="offer-mvp"
+          class="mt-8 inline-flex items-center gap-4 text-lg font-extrabold text-primary transition hover:text-secondary lg:mt-14"
+        >
+          <span>Details</span>
+          <img src="/assets/svg/up-arrow.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+</WidgetWrapper>

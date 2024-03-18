@@ -1,9 +1,8 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
+import PricingSection from '~/components/widgets/PricingSection.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -14,209 +13,231 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant:"primary", target: '_blank', text: 'Start exploring', href: '/' }]}
+  <Hero 
+    tagline="Creating new business online"
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    items={[
-      {
-        title: 'High-Quality Designs',
-        description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Customization Tools',
-        description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+    <Fragment slot="title">
+      We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br /> 
+      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
     </Fragment>
-  </Content>
 
-  <!-- Content Widget **************** -->
+    <Fragment slot="subtitle">
+      Check our packages or hire us ongoing to develop your project
+    </Fragment>
+  </Hero>
 
-  <Content
-    isAfterContent
-    items={[
+
+  <Features3
+  title="General terms and conditions"
+  subtitle="Discover the advantages of choosing our plans"
+  columns={2}
+  items={[
       {
-        title: 'Time Savings',
+        title: 'Price',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+          'We charge in advance for 2 week sprint. The price is fixed and will not change during the project. You are expected to pay ahead of every sprint.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Schedule',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'We will schedule sprints to happen when you are ready to recieve work. If at any point you are want to stop work or are late with funding, we will stop and then restart can happen when we have slots available.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Start and end',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
+          'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Instant Download',
+        title: 'Feedback',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
+        icon: 'tabler:clock',
+      },
+  ]}
+  classes={{ container: 'max-w-5xl' }}
+/>
+
+  <Features2
+    title="Ongoing"
+    subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages. Our weekly prices for ongoing work on your project. "
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'UI/UX Design',
+        description:
+          '$3500 per week.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Development',
+        description:
+          '$6500 per week.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Admin',
+        description:
+          '$1500 per week.',
+        icon: 'tabler:template',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
-    </Fragment>
-  </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Words from real customers"
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
-  <!-- CallToAction Widget *********** -->
+<PricingSection
+      title="MVP in 90 days"
+      subtitle="We will follow our process as outlined in The Method to develop your MVP in 90 days."
+>
+  <table class="w-full">
+    <tr>
+      <th>Weeks</th>
+      <th>Price per Week</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>4 weeks of prototyping and UI work</td>
+      <td>$3,500</td>
+      <td>$14K</td>
+    </tr>
+    <tr>
+      <td>4 weeks of development</td>
+      <td>$6,500</td>
+      <td>$26K</td>
+    </tr>
+    <tr>
+      <td>4 weeks for launch and optimizing</td>
+      <td>$1,500</td>
+      <td>$6K</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Total</strong></td>
+      <td><strong>$46K</strong></td>
+    </tr>
+    <tr class="h-8 text-xl">
+      <td colspan="2"><strong>Package discount</strong></td>
+      <td><strong>$35K</strong></td>
+    </tr>
+  </table>
+</PricingSection>
 
-  <CallToAction
-    actions={[{
-      variant: "primary",
-      text: 'Start exploring',
-      href: '/',
-    }]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-  />
+<PricingSection
+      title="Micro Saas in 6 weeks"
+      subtitle="We will follow our process as outlined in The Method to develop your Micro-Saas in 6 weeks."
+>
+<table class="w-full">
+  <tr>
+    <th>Weeks</th>
+    <th>Price per Week</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>2 weeks of prototyping and UI work</td>
+    <td>$3,500</td>
+    <td>$7,000</td>
+  </tr>
+  <tr>
+    <td>2 weeks of development</td>
+    <td>$6,500</td>
+    <td>$13,000</td>
+  </tr>
+  <tr>
+    <td>2 weeks for launch and optimizing</td>
+    <td>$1,500</td>
+    <td>$3,000</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Total</strong></td>
+    <td><strong>$23,000</strong></td>
+  </tr>
+  <tr class="h-8 text-xl">
+    <td colspan="2"><strong>Package discount</strong></td>
+    <td><strong>$19,000</strong></td>
+  </tr>
+</table>
+</PricingSection>
+
+<PricingSection
+      title="Company Website in 6 weeks"
+      subtitle="We will follow our process as outlined in The Method to develop your website in 6 weeks."
+>
+<table class="w-full">
+  <tr>
+    <th>Weeks</th>
+    <th>Price per Week</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>4 weeks of prototyping and UI work</td>
+    <td>$3,500</td>
+    <td>$14,000</td>
+  </tr>
+  <tr>
+    <td>2 weeks for launch and optimizing</td>
+    <td>$1,500</td>
+    <td>$3,000</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Total</strong></td>
+    <td><strong>$17,000</strong></td>
+  </tr>
+  <tr class="h-8 text-xl">
+    <td colspan="2"><strong>Package discount</strong></td>
+    <td><strong>$15,000</strong></td>
+  </tr>
+</table>
+</PricingSection>
+
+<Features3
+title="Weekly workshops"
+subtitle="Free perk"
+columns={2}
+items={[
+    {
+      title: 'Marketing Strategy',
+      description:
+        'We will examine current marketing strategy and suggest improvements. We will also help you to create a new one if you do not have it yet.',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'User Journey',
+      description:
+        "A customer journey map is a visual representation of every experience your customers have with you. It helps to tell the story of a customer’s experience with your brand from original engagement and into a long-term relationship.",
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Funnel Optimization',
+      description:
+        'Real-time analytics is the discipline that applies logic and mathematics to data...',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Alternate Universe',
+      description:
+        'Imagine that we are different company, or that we are in different market. What would we do then? This is a fun exercise to help us think outside the box.',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Retrospektive',
+      description:
+        'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done. This is regular workshop to help us improve our work.',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Roadmap review',
+      description:
+        'What we planned and how things are going. This is a regular workshop to help us stay on track and adjust our plans as needed.',
+      icon: 'tabler:clock',
+    },    
+]}
+classes={{ container: 'max-w-5xl' }}
+/>
+
+
 </Layout>
