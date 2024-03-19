@@ -22,14 +22,6 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink(),
     },
-    {
-      text: 'Example',
-      href: getPermalink('/homes/saas'),
-    },
-    {
-      text: 'Example',
-      href: getPermalink('/pricing'),
-    },
   ],
 };
 
