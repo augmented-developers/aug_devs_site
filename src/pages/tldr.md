@@ -9,4 +9,4 @@ layout: '~/layouts/MarkdownLayout.astro'
 - **Our prices are same for everyone and we charge weekly, 2 weeks in advance**
 - **We expect you to be present and guide our work frequently**
 - **Our goal is balance of your success and our happiness**
-- **To start, reach out and briefly explain your *idea* **
+- **To start, reach out and briefly explain your idea**
