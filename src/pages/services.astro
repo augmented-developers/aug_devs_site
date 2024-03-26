@@ -13,29 +13,26 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero 
+  <Hero
     tagline="Creating new business online"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd',
       alt: 'Caos Image',
     }}
   >
     <Fragment slot="title">
-      We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br /> 
-      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
+      We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
+      launch it in <span class="text-accent dark:text-white highlight">60 days</span>
     </Fragment>
 
-    <Fragment slot="subtitle">
-      Check our packages or hire us ongoing to develop your project
-    </Fragment>
+    <Fragment slot="subtitle"> Check our packages or hire us ongoing to develop your project </Fragment>
   </Hero>
 
-
   <Features3
-  title="General terms and conditions"
-  subtitle="Discover the advantages of choosing our plans"
-  columns={2}
-  items={[
+    title="General terms and conditions"
+    subtitle="Discover the advantages of choosing our plans"
+    columns={2}
+    items={[
       {
         title: 'Price',
         description:
@@ -60,187 +57,197 @@ const metadata = {
           'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
         icon: 'tabler:clock',
       },
-  ]}
-  classes={{ container: 'max-w-5xl' }}
-/>
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
 
   <PricingSection
-  title="Ongoing engagement"
-  subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages."
-  url="/start"
-  tileColor="background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)"
->
-<table class="w-full">
-<tr>
-  <th>Weeks</th>
-  <th>Price per Week</th>
-</tr>
-<tr>
-  <td>Week of prototyping and UI work</td>
-  <td>$3,500</td>
-</tr>
-<tr>
-  <td>Week of development</td>
-  <td>$6,500</td>
-</tr>
-<tr>
-  <td>Week for admin, configuration, maintenance</td>
-  <td>$1,500</td>
-</tr>
-</table>
-</PricingSection>
+    title="Ongoing engagement"
+    subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages."
+    url="/start"
+    tileColor="background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)"
+  >
+    <table class="w-full">
+      <tr>
+        <th>Weeks</th>
+        <th>Price per Week</th>
+      </tr>
+      <tr>
+        <td>Week of prototyping and UI work</td>
+        <td>$3,500</td>
+      </tr>
+      <tr>
+        <td>Week of development</td>
+        <td>$6,500</td>
+      </tr>
+      <tr>
+        <td>Week for admin, configuration, maintenance</td>
+        <td>$1,500</td>
+      </tr>
+    </table>
+  </PricingSection>
 
+  <Hero
+    image={{
+      src: 'https://plus.unsplash.com/premium_photo-1664201889896-6a42c19e953a',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title"> Our Packages </Fragment>
 
-<PricingSection
-      title="MVP in 90 days"
-      subtitle="We will follow our process as outlined in The Method to develop your MVP in 90 days."
-      url="/start"
->
-  <table class="w-full">
-    <tr>
-      <th>Weeks</th>
-      <th>Price per Week</th>
-      <th>Total</th>
-    </tr>
-    <tr>
-      <td>4 weeks of prototyping and UI work</td>
-      <td>$3,500</td>
-      <td>$14K</td>
-    </tr>
-    <tr>
-      <td>4 weeks of development</td>
-      <td>$6,500</td>
-      <td>$26K</td>
-    </tr>
-    <tr>
-      <td>4 weeks for launch and optimizing</td>
-      <td>$1,500</td>
-      <td>$6K</td>
-    </tr>
-    <tr>
-      <td colspan="2"><strong>Total</strong></td>
-      <td><strong>$46K</strong></td>
-    </tr>
-    <tr class="h-8 text-xl">
-      <td colspan="2"><strong>Package discount</strong></td>
-      <td><strong>$35K</strong></td>
-    </tr>
-  </table>
-</PricingSection>
+    <Fragment slot="subtitle"
+      >We outlined week-by-week activities to deliver what is promised in package. Remember that you are buying our time
+      and if you want to spend more time on specific feature, it is as simple as buying additional weeks.
+    </Fragment>
+  </Hero>
 
-<PricingSection
-      title="Micro Saas in 6 weeks"
-      subtitle="We will follow our process as outlined in The Method to develop your Micro-Saas in 6 weeks."
-      url="/start"
->
-<table class="w-full">
-  <tr>
-    <th>Weeks</th>
-    <th>Price per Week</th>
-    <th>Total</th>
-  </tr>
-  <tr>
-    <td>2 weeks of prototyping and UI work</td>
-    <td>$3,500</td>
-    <td>$7,000</td>
-  </tr>
-  <tr>
-    <td>2 weeks of development</td>
-    <td>$6,500</td>
-    <td>$13,000</td>
-  </tr>
-  <tr>
-    <td>2 weeks for launch and optimizing</td>
-    <td>$1,500</td>
-    <td>$3,000</td>
-  </tr>
-  <tr>
-    <td colspan="2"><strong>Total</strong></td>
-    <td><strong>$23,000</strong></td>
-  </tr>
-  <tr class="h-8 text-xl">
-    <td colspan="2"><strong>Package discount</strong></td>
-    <td><strong>$19,000</strong></td>
-  </tr>
-</table>
-</PricingSection>
+  <PricingSection
+    title="MVP in 60 days"
+    subtitle="We will follow our process as outlined in The Method to develop your MVP in 60 days."
+    url="/start"
+  >
+    <table class="w-full">
+      <tr>
+        <th>Weeks</th>
+        <th>Price per Week</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>2 weeks of prototyping and UI work</td>
+        <td>$3,500</td>
+        <td>$7K</td>
+      </tr>
+      <tr>
+        <td>4 weeks of development</td>
+        <td>$6,500</td>
+        <td>$26K</td>
+      </tr>
+      <tr>
+        <td>2 weeks for launch and optimizing</td>
+        <td>$1,500</td>
+        <td>$3K</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>$36K</strong></td>
+      </tr>
+      <tr class="h-8 text-xl">
+        <td colspan="2"><strong>Package discount</strong></td>
+        <td><strong>$30K</strong></td>
+      </tr>
+    </table>
+  </PricingSection>
 
-<PricingSection
-      title="Company Website in 6 weeks"
-      subtitle="We will follow our process as outlined in The Method to develop your website in 6 weeks."
-      url="/start"
->
-<table class="w-full">
-  <tr>
-    <th>Weeks</th>
-    <th>Price per Week</th>
-    <th>Total</th>
-  </tr>
-  <tr>
-    <td>4 weeks of prototyping and UI work</td>
-    <td>$3,500</td>
-    <td>$14,000</td>
-  </tr>
-  <tr>
-    <td>2 weeks for launch and optimizing</td>
-    <td>$1,500</td>
-    <td>$3,000</td>
-  </tr>
-  <tr>
-    <td colspan="2"><strong>Total</strong></td>
-    <td><strong>$17,000</strong></td>
-  </tr>
-  <tr class="h-8 text-xl">
-    <td colspan="2"><strong>Package discount</strong></td>
-    <td><strong>$15,000</strong></td>
-  </tr>
-</table>
-</PricingSection>
+  <PricingSection
+    title="Micro Saas in 4 weeks"
+    subtitle="We will follow our process as outlined in The Method to develop your Micro-Saas in 6 weeks."
+    url="/start"
+  >
+    <table class="w-full">
+      <tr>
+        <th>Weeks</th>
+        <th>Price per Week</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>A week of prototyping and UI work</td>
+        <td>$3,500</td>
+        <td>$3,500</td>
+      </tr>
+      <tr>
+        <td>2 weeks of development</td>
+        <td>$6,500</td>
+        <td>$13,000</td>
+      </tr>
+      <tr>
+        <td>1 weeks for launch and optimizing</td>
+        <td>$1,500</td>
+        <td>$1,500</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>$18,000</strong></td>
+      </tr>
+      <tr class="h-8 text-xl">
+        <td colspan="2"><strong>Package discount</strong></td>
+        <td><strong>$15,000</strong></td>
+      </tr>
+    </table>
+  </PricingSection>
 
-<Features3
-title="Weekly workshops"
-subtitle="Free perk"
-columns={2}
-items={[
-    {
-      title: 'Marketing Strategy',
-      description:
-        'We will examine current marketing strategy and suggest improvements. We will also help you to create a new one if you do not have it yet.',
-      icon: 'tabler:clock',
-    },
-    {
-      title: 'User Journey',
-      description:
-        "A customer journey map is a visual representation of every experience your customers have with you. It helps to tell the story of a customer’s experience with your brand from original engagement and into a long-term relationship.",
-      icon: 'tabler:clock',
-    },
-    {
-      title: 'Funnel Optimization',
-      description:
-        'Real-time analytics is the discipline that applies logic and mathematics to data...',
-      icon: 'tabler:clock',
-    },
-    {
-      title: 'Alternate Universe',
-      description:
-        'Imagine that we are different company, or that we are in different market. What would we do then? This is a fun exercise to help us think outside the box.',
-      icon: 'tabler:clock',
-    },
-    {
-      title: 'Retrospektive',
-      description:
-        'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done. This is regular workshop to help us improve our work.',
-      icon: 'tabler:clock',
-    },
-    {
-      title: 'Roadmap review',
-      description:
-        'What we planned and how things are going. This is a regular workshop to help us stay on track and adjust our plans as needed.',
-      icon: 'tabler:clock',
-    },    
-]}
-classes={{ container: 'max-w-5xl' }}
-/>
+  <PricingSection
+    title="Company Website in 6 weeks"
+    subtitle="We will follow our process as outlined in The Method to develop your website in 6 weeks."
+    url="/start"
+  >
+    <table class="w-full">
+      <tr>
+        <th>Weeks</th>
+        <th>Price per Week</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>4 weeks of prototyping and UI work</td>
+        <td>$3,500</td>
+        <td>$14,000</td>
+      </tr>
+      <tr>
+        <td>2 weeks for launch and optimizing</td>
+        <td>$1,500</td>
+        <td>$3,000</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>$17,000</strong></td>
+      </tr>
+      <tr class="h-8 text-xl">
+        <td colspan="2"><strong>Package discount</strong></td>
+        <td><strong>$15,000</strong></td>
+      </tr>
+    </table>
+  </PricingSection>
 
-
+  <Features3
+    title="Weekly workshops"
+    subtitle="Free perk"
+    columns={2}
+    items={[
+      {
+        title: 'Marketing Strategy',
+        description:
+          'We will examine current marketing strategy and suggest improvements. We will also help you to create a new one if you do not have it yet.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'User Journey',
+        description:
+          'A customer journey map is a visual representation of every experience your customers have with you. It helps to tell the story of a customer’s experience with your brand from original engagement and into a long-term relationship.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Funnel Optimization',
+        description: 'Real-time analytics is the discipline that applies logic and mathematics to data...',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Alternate Universe',
+        description:
+          'Imagine that we are different company, or that we are in different market. What would we do then? This is a fun exercise to help us think outside the box.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Retrospektive',
+        description:
+          'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done. This is regular workshop to help us improve our work.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Roadmap review',
+        description:
+          'What we planned and how things are going. This is a regular workshop to help us stay on track and adjust our plans as needed.',
+        icon: 'tabler:clock',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
 </Layout>

@@ -43,7 +43,7 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'MVP in 90 days', href: '/offer#mvp' },
+        { text: 'MVP in 60 days', href: '/offer#mvp' },
         { text: 'Micro Saas', href: '/offer#microsaas' },
         { text: 'Corporate Site', href: '/offer#website' },
       ],
