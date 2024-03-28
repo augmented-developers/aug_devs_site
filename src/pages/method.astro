@@ -11,7 +11,6 @@ import Method from '~/components/widgets/MethodProducing.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
-
 const metadata = {
   title: 'Augmented Developers - Cybernetically Enhanced Web Development',
   ignoreTitleTemplate: true,
@@ -20,21 +19,29 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <Hero
-    actions={[]}
-    image={{ src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'The Method Image' }}
+    actions={[
+      { variant: 'primary', text: 'Services', href: '/services' },
+      { text: 'Start', href: '/start' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'The Method Image',
+    }}
   >
-    <Fragment slot="title">
-      The Method
-    </Fragment>
+    <Fragment slot="title"> The Method </Fragment>
 
     <Fragment slot="subtitle">
-        Our method is focused on your needs and goals, very light on process. It is focused on producing visible results and quickly so that feedback loop work well. Like Agile was meant to be.
+      Our method is focused on your needs and goals, very light on process. It is focused on producing visible results
+      and quickly so that feedback loop work well. Like Agile was meant to be.
     </Fragment>
   </Hero>
 
   <Note />
 
-  <Method title="We keep you involved with quick feedback loop" subtitle="We combine our team’s depth of experience in building software, our client’s intimate knowledge of the industries they serve and insights uncovered through the discoveries we make."/>
+  <Method
+    title="We keep you involved with quick feedback loop"
+    subtitle="We combine our team’s depth of experience in building software, our client’s intimate knowledge of the industries they serve and insights uncovered through the discoveries we make."
+  />
 
   <Steps
     title="Our Method for producing software"
@@ -59,7 +66,8 @@ const metadata = {
       },
       {
         title: 'Launch &amp; Optimization',
-        description: "The culmination of our efforts is the product launch, a carefully orchestrated event designed to introduce your solution to the market. Post-launch, we'll continue to monitor performance and gather user feedback to identify areas for optimization. This ensures that your product is not only well-received but also continues to evolve and improve over time.",
+        description:
+          "The culmination of our efforts is the product launch, a carefully orchestrated event designed to introduce your solution to the market. Post-launch, we'll continue to monitor performance and gather user feedback to identify areas for optimization. This ensures that your product is not only well-received but also continues to evolve and improve over time.",
         icon: 'tabler:check',
       },
     ]}
@@ -221,7 +229,6 @@ const metadata = {
     </Fragment>
   </Content> -->
 
-
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
@@ -231,5 +238,4 @@ const metadata = {
                         Astro is a very interesting technology. Thanks.
                 `}
   />
-
 </Layout>
