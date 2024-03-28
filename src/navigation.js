@@ -50,7 +50,11 @@ export const footerData = {
     },
     {
       title: 'Resources',
-      links: [{ text: 'Docs', href: '#' }],
+      links: [
+        { text: 'FAQ', href: getPermalink('/faq') },
+        { text: 'Terms', href: getPermalink('/terms') },
+        { text: 'Privacy Policy', href: getPermalink('/privacy') },
+      ],
     },
     {
       title: 'Company',
@@ -61,10 +65,7 @@ export const footerData = {
       ],
     },
   ],
-  secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
+  secondaryLinks: [],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/augmented-devs/' },
     // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
