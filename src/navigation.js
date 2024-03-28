@@ -36,16 +36,16 @@ export const footerData = {
       links: [
         { text: 'Home', href: '/' },
         { text: 'The Method', href: '/method' },
-        { text: 'Offer', href: '/offer' },
+        { text: 'Services', href: '/Services' },
         { text: 'Start', href: '/start' },
       ],
     },
     {
       title: 'Services',
       links: [
-        { text: 'MVP in 60 days', href: '/offer#mvp' },
-        { text: 'Micro Saas', href: '/offer#microsaas' },
-        { text: 'Corporate Site', href: '/offer#website' },
+        { text: 'MVP in 60 days', href: '/services#MVP' },
+        { text: 'Micro Saas', href: '/services#Micro-Saas' },
+        { text: 'Corporate Site', href: '/services#Website' },
       ],
     },
     {
