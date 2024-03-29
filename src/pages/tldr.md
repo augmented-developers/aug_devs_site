@@ -10,3 +10,23 @@ layout: '~/layouts/MarkdownLayout.astro'
 - **We expect you to be present and guide our work frequently**
 - **Our goal is balance of your success and our happiness**
 - **To start, reach out and briefly explain your idea**
+
+
+
+
+
+.
+
+
+.
+
+
+.
+
+
+
+.
+
+
+
+.
