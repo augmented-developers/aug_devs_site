@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Augmented Developers
-    template: '%s — AstroWind'
+    template: '%s — Augmented Devs'
   description: "Augmented Developers - Cybernetically enhanced development"
   robots:
     index: true
