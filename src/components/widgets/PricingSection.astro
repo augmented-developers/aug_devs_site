@@ -6,10 +6,12 @@ const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
+  offer = await Astro.slots.render('offer'),
   image = await Astro.slots.render('image'),
   isReversed = false,
-  url = await Astro.slots.render('url') || "#",
-  tileColor = await Astro.slots.render('tileColor') || "background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)",
+  url = (await Astro.slots.render('url')) || '#',
+  tileColor = (await Astro.slots.render('tileColor')) ||
+    'background: radial-gradient(193.33% 779.99% at 81.67% -6.05%, rgba(71, 189, 255, 0.3) 0%, rgba(71, 189, 255, 0) 100%)',
   id,
   isDark = false,
   classes = {},
@@ -18,11 +20,10 @@ const {
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
-  <div class:list={['flex flex-col gap-8 md:gap-12 h-96', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}>
-    <div
-      class="mt-14 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-20 lg:grid-cols-1"
-      style={tileColor}
-    >
+  <div
+    class:list={['flex flex-col gap-8 md:gap-12 h-96', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}
+  >
+    <div class="mt-14 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-20 lg:grid-cols-1" style={tileColor}>
       <div class="mb-5 ltr:lg:text-left rtl:lg:text-right">
         <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
           {title}
@@ -40,6 +41,17 @@ const {
           <span>Start</span>
           <Icon name="tabler:circle-arrow-up-right" class="w-8 h-8" />
         </a>
+        {
+          offer && (
+            <a
+              href={offer}
+              class="ml-6 mt-8 inline-flex items-center gap-4 text-md font-bold text-primary transition hover:text-secondary lg:mt-14"
+            >
+              <span>Details</span>
+              <Icon name="tabler:info-circle" class="w-8 h-8" />
+            </a>
+          )
+        }
       </div>
     </div>
   </div>
