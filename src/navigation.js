@@ -46,6 +46,7 @@ export const footerData = {
         { text: 'MVP in 60 days', href: '/services#MVP' },
         { text: 'Micro Saas', href: '/services#Micro-Saas' },
         { text: 'Corporate Site', href: '/services#Website' },
+        { text: 'Full App', href: '/services#FULL' },
       ],
     },
     {
