@@ -48,6 +48,7 @@ export const footerData = {
         { text: 'Micro Saas', href: '/services#Micro-Saas' },
         { text: 'Corporate Site', href: '/services#Website' },
         { text: 'Full App', href: '/services#FULL' },
+        { text: 'General Development', href: '/services#GDS' },
       ],
     },
     {
