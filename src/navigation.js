@@ -7,16 +7,13 @@ export const headerData = {
       href: '/',
     },
     {
-      text: 'TL;DR',
-      href: getPermalink('/tldr'),
+      text: 'Services',
+      href: getPermalink('/services'),
     },
+
     {
       text: 'The Method',
       href: getPermalink('/method'),
-    },
-    {
-      text: 'Services',
-      href: getPermalink('/services'),
     },
     {
       text: 'Start',
@@ -25,6 +22,10 @@ export const headerData = {
     {
       text: 'Blog',
       href: getBlogPermalink(),
+    },
+    {
+      text: 'TL;DR',
+      href: getPermalink('/tldr'),
     },
   ],
 };
@@ -35,8 +36,8 @@ export const footerData = {
       title: 'Product',
       links: [
         { text: 'Home', href: '/' },
-        { text: 'The Method', href: '/method' },
         { text: 'Services', href: '/Services' },
+        { text: 'The Method', href: '/method' },
         { text: 'Start', href: '/start' },
       ],
     },
