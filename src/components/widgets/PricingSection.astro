@@ -20,10 +20,8 @@ const {
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
-  <div
-    class:list={['flex flex-col gap-8 md:gap-12 h-96', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}
-  >
-    <div class="mt-14 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-20 lg:grid-cols-1" style={tileColor}>
+  <div>
+    <div class="mt-6 grid gap-4 rounded-2xl py-8 px-4 sm:p-10 lg:mt-4 lg:grid-cols-1" style={tileColor}>
       <div class="mb-5 ltr:lg:text-left rtl:lg:text-right">
         <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
           {title}
