@@ -1,0 +1,44 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Idea Evaluation Worksheet',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Idea Evaluation Worksheet"
+    image={{
+      src: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961',
+      alt: 'Two laptops and hands',
+    }}
+  >
+    <Fragment slot="title"> Get Idea Worksheet </Fragment>
+
+    <Fragment slot="subtitle">
+      <p class="py-12">
+        I prepared this worksheet to initiate conversations with my clients. However, it also serves as a valuable tool
+        for reflecting on your idea and examining it from multiple perspectives.
+        <br /><br />
+        Please use it to evaluate and refine your idea and identify areas that need further exploration.
+      </p>
+      <div id="idea-ws-container"></div>
+      <p class="py-12 font-semibold text-4xl">Happy ideating!</p>
+    </Fragment>
+  </Hero>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    import { t } from 'dist/chunks/astro_h0aea7Pt.mjs';
+
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: '45635852',
+      formId: 'a0ced9eb-c1bc-4ce3-9282-0a63021f7b51',
+      target: '#idea-ws-container',
+    });
+  </script>
+</Layout>
