@@ -12,7 +12,7 @@ export const headerData = {
     },
 
     {
-      text: 'The Method',
+      text: 'Method',
       href: getPermalink('/method'),
     },
     {
