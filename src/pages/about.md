@@ -1,17 +1,7 @@
 ---
-publishDate: 2024-05-21T00:00:00Z
-title: A little about us
-excerpt: I didn't write this when we started, so here it is now
-image: https://images.unsplash.com/photo-1542353436-312f0e1f67ff
-tags:
-  - website
-  - service
-  - development
-  - ideas
-  - about
+title: 'About Augmented Developers'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
-
-### About Augmented Developers
 
 **Foundation and Vision**
 
@@ -24,6 +14,15 @@ The inception of Augmented Developers stems from my frustration with corporate c
 **AI and the Future of Development**
 
 I believe that while AI may not write complete applications in the near future, it has the potential to revolutionize various aspects of development. AI can help clarify vague ideas, create detailed software and infrastructure plans, and assist in organizing and resourcing projects. It can streamline brainstorming, support developers in focusing on business rules rather than syntax, and ultimately accelerate the development process.
+
+**What Makes Us Augmented**
+
+At Augmented Developers, our name embodies our philosophy. We enhance traditional development practices with cutting-edge AI technology, making our processes more efficient and effective. Our use of AI allows us to:
+
+- Clarify Ideas: AI helps in transforming vague concepts into clear, actionable plans.
+- Optimize Planning: AI generates detailed software and infrastructure plans that only require minimal adjustments.
+- Support Development: AI assists in brainstorming features and automating routine tasks, enabling developers to focus on critical business logic.
+- Accelerate Delivery: By leveraging AI, we reduce development time and deliver high-quality solutions faster.
 
 **Our Inspiration**
 
@@ -45,9 +44,3 @@ We believe that simplicity and transparency help everyone focus on achieving bus
 3. **Marketing Automation:** Recognizing the need for effective marketing software, we also focus on automating marketing processes to enhance efficiency.
 
 At Augmented Developers, our goal is to help businesses harness the power of AI to streamline their development processes and achieve their goals. We are excited to collaborate with clients globally and make a meaningful impact through innovative solutions.
-
-#### That's all!
-
-Off to work on client project!
-
-[[Top]](#top)
