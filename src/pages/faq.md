@@ -59,4 +59,17 @@ We prioritize security by:
 ### What is your pricing model?
 Our pricing model is transparent and project-based. We offer different packages for various stages of development, and additional work can be added as needed. We aim to provide value and flexibility to meet your specific requirements.
 
+
+### How long does it typically take to complete a project?
+The timeline for each project varies based on its complexity and scope. We work closely with our clients to set realistic timelines and milestones, ensuring timely delivery without compromising on quality.
+
+### What industries do you have experience working in?
+We have experience working in various industries including finance, healthcare, education, e-commerce, and more. Our diverse expertise allows us to tailor solutions to meet the unique needs of different sectors.
+
+### How do you handle intellectual property and confidentiality?
+We take intellectual property and confidentiality very seriously. All client information and project details are treated with the utmost confidentiality. We can also sign non-disclosure agreements (NDAs) to provide additional assurance.
+
+### Do you provide training or documentation for the software you develop?
+Yes, we provide comprehensive training and documentation to ensure that you and your team can effectively use and maintain the software we develop. This includes user manuals, technical documentation, and hands-on training sessions.
+
 If you have more questions or need further information, feel free to contact us. We’re here to help!
