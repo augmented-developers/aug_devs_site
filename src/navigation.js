@@ -44,11 +44,11 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'MVP in 60 days', href: '/services#MVP' },
-        // { text: 'Micro Saas', href: '/services#Micro-Saas' },
-        { text: 'Corporate Site', href: '/services#Website' },
-        { text: 'Full App', href: '/services#FULL' },
         { text: 'General Development', href: '/services#GDS' },
+        { text: 'MVP in 90 days', href: '/services#MVP' },
+        // { text: 'Micro Saas', href: '/services#Micro-Saas' },
+        // { text: 'Corporate Site', href: '/services#Website' },
+        // { text: 'Full App', href: '/services#FULL' },
       ],
     },
     {

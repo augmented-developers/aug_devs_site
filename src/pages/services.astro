@@ -2,6 +2,7 @@
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import PricingSection from '~/components/widgets/PricingSection.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -22,7 +23,7 @@ const metadata = {
   >
     <Fragment slot="title">
       We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
-      launch it in <span class="text-accent dark:text-white highlight">60 days</span>
+      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
     </Fragment>
 
     <Fragment slot="subtitle"> Check our packages or hire us ongoing to develop your project </Fragment>
@@ -61,7 +62,7 @@ const metadata = {
     classes={{ container: 'max-w-5xl' }}
   />
 
-  <PricingSection
+  <!-- <PricingSection
     id="ongoing-engagement"
     title="Ongoing engagement"
     subtitle="It is hard to estimate needs, if you are comfortable with the idea of hiring us on a week to week basis, we will work with you using same method as we do for our packages. We can build web application or native mobile apps. Every platform requires dedicated specialist but UI can be done for all platforms at the same time."
@@ -86,7 +87,7 @@ const metadata = {
         <td>$1,500</td>
       </tr>
     </table>
-  </PricingSection>
+  </PricingSection> -->
 
   <PricingSection
     id="GDS"
@@ -108,14 +109,19 @@ const metadata = {
         <td>General Development Service (2-3 tasks at the time)</td>
         <td class="text-center">$2,495</td>
       </tr>
+      <tr>
+        <td>General Development Service full team engagement</td>
+        <td class="text-center">$4,000</td>
+      </tr>
     </table>
     <h4 class="my-3 font-bold">Example usage:</h4>
     <ul class="list-disc list-outside ml-4">
       <li>Prototyping</li>
-      <li>UI work</li>
+      <li>UI &amp; design work</li>
       <li>Codebase refactoring</li>
       <li>Marketing Automation - LinkedIn, Instagram, Twitter and Facebook</li>
       <li>Landing pages and flows</li>
+      <li>Emails and copywriting</li>
       <li>SEO, page generation, optimization, review and update site</li>
       <li>Tracking and user observation</li>
       <li>Other general website and application work</li>
@@ -140,8 +146,8 @@ const metadata = {
 
   <PricingSection
     id="MVP"
-    title="MVP in 60 days"
-    subtitle="We will follow our process as outlined in The Method to develop your MVP in 60 days."
+    title="MVP in 90 days"
+    subtitle="We will follow our process as outlined in The Method to develop your MVP. We will launch it in 60 days and continue to tweak and work on it for another 30 days post launch."
     offer="/offer-mvp"
     url="/start"
   >
@@ -152,27 +158,27 @@ const metadata = {
         <th>Total</th>
       </tr>
       <tr>
-        <td>2 weeks of prototyping and UI work</td>
+        <td>4 weeks of prototyping and UI work</td>
         <td>$3,500</td>
-        <td>$7K</td>
+        <td>$14K</td>
       </tr>
       <tr>
-        <td>4 weeks of development</td>
+        <td>6 weeks of development</td>
         <td>$6,500</td>
-        <td>$26K</td>
+        <td>$39K</td>
       </tr>
       <tr>
-        <td>2 weeks for launch and optimizing</td>
-        <td>$1,500</td>
-        <td>$3K</td>
+        <td>4 weeks for launch and optimizing</td>
+        <td>$1,200</td>
+        <td>$4,8K</td>
       </tr>
       <tr>
         <td colspan="2"><strong>Total</strong></td>
-        <td><strong>$36K</strong></td>
+        <td><strong>$58K</strong></td>
       </tr>
       <tr class="h-8 text-xl">
         <td colspan="2"><strong>Package discount</strong></td>
-        <td><strong>$30K</strong></td>
+        <td><strong>$45K</strong></td>
       </tr>
     </table>
   </PricingSection>
@@ -215,7 +221,7 @@ const metadata = {
     </table>
   </PricingSection> -->
 
-  <PricingSection
+  <!-- <PricingSection
     id="Website"
     title="Company Website in 6 weeks"
     subtitle="We will follow our process as outlined in The Method to develop your website in 6 weeks."
@@ -246,9 +252,9 @@ const metadata = {
         <td><strong>$15,000</strong></td>
       </tr>
     </table>
-  </PricingSection>
+  </PricingSection> -->
 
-  <PricingSection
+  <!-- <PricingSection
     id="FULL"
     title="App in 90 days -> all hands on deck"
     subtitle="You will have a team with undivided attention and focused work for 90 days in which we can build fully functional app. Web or native mobile app or both."
@@ -285,9 +291,9 @@ const metadata = {
         <td><strong>$120K</strong></td>
       </tr>
     </table>
-  </PricingSection>
+  </PricingSection> -->
 
-  <Features3
+  <!-- <Features3
     id="workshops"
     title="Weekly workshops"
     subtitle="Free perk"
@@ -330,5 +336,23 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
-  />
+  /> -->
+  <Hero2
+    tagline="Let's start"
+    actions={[
+      { variant: 'primary', text: 'Get Started', href: '/start' },
+    ]}
+    image={{
+      src: 'https://plus.unsplash.com/premium_photo-1661929257183-4b5850e31d5e',
+      alt: 'Jump into unknown',
+    }}
+  >
+    <Fragment slot="title">
+      <small>
+        Let's start you on your journey.
+      </small>
+    </Fragment>
+
+    <Fragment slot="subtitle"> Create the Future with AI and Tech </Fragment>
+  </Hero2>
 </Layout>
