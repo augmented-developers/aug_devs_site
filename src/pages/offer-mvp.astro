@@ -21,7 +21,7 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
+      Develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
       launch it in <span class="text-accent dark:text-white highlight">90 days</span>
     </Fragment>
   </Hero>
@@ -55,14 +55,26 @@ const metadata = {
           'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
         icon: 'tabler:rotate',
       },
+      {
+        title: 'Status update',
+        description:
+          'We will provide updates on completed work and progress daily through chat or email update. We can have brief status update meeting on end of first week of sprint and on end of sprint you will be able to see work demoed.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Workshops',
+        description:
+          'During work week, when we need to think through features or review something that needs more focused feedback, we will organize workshops. Those will be different kinds and depending on work and topic we need to clarify or decide.',
+        icon: 'tabler:rotate',
+      },
     ]}
     classes={{ container: 'max-w-5xl' }}
   />
 
   <PricingSection
     id="MVP"
-    title="MVP in 90 days"
-    subtitle="We will follow our process as outlined in The Method to develop your MVP in 90 days."
+    title="Code & Coaching - MVP in 90 days"
+    subtitle="Me and my team will work with you to define and refine your idea into succesful product. We will follow our process as outlined in The Method to develop your MVP. We will launch it in 60 days and continue to tweak and work on it for another 30 days post launch."
     url="/start"
   >
     <table class="w-full">
@@ -72,27 +84,32 @@ const metadata = {
         <th>Total</th>
       </tr>
       <tr>
-        <td>2 weeks of prototyping and UI work</td>
+        <td>4 weeks of prototyping, UI and design</td>
         <td>$3,500</td>
-        <td>$7K</td>
+        <td>$14K</td>
       </tr>
       <tr>
-        <td>4 weeks of development</td>
+        <td>6 weeks of development (pair of developers)</td>
         <td>$6,500</td>
-        <td>$26K</td>
+        <td>$39K</td>
       </tr>
       <tr>
-        <td>2 weeks for launch and optimizing</td>
-        <td>$1,500</td>
-        <td>$3K</td>
+        <td>4 weeks for launch and optimizing</td>
+        <td>$1,200</td>
+        <td>$4,8K</td>
+      </tr>
+      <tr>
+        <td>8 planned workshops (+ as many ad-hoc as we need)</td>
+        <td>$650</td>
+        <td>$5,2K</td>
       </tr>
       <tr>
         <td colspan="2"><strong>Total</strong></td>
-        <td><strong>$36K</strong></td>
+        <td><strong>$63,2K</strong></td>
       </tr>
       <tr class="h-8 text-xl">
-        <td colspan="2"><strong>Package discount</strong></td>
-        <td><strong>$30K</strong></td>
+        <td colspan="2"><strong>Package price</strong></td>
+        <td><strong>$49.5K</strong></td>
       </tr>
     </table>
   </PricingSection>
@@ -124,22 +141,22 @@ const metadata = {
         icon: 'tabler:code',
       },
       {
-        title: 'Week 5 <br /> <span class="text-sm font-normal">Feature development</span>',
+        title: 'Week 5 &amp; 6 <br /> <span class="text-sm font-normal">Feature development</span>',
         description: `Continue working on main feature of the application.`,
         icon: 'tabler:code',
       },
       {
-        title: 'Week 6 <br /> <span class="text-sm font-normal">Finish development work</span>',
+        title: 'Week 7 <br /> <span class="text-sm font-normal">Finish development work</span>',
         description: `We will finish all development work and prepare for launch. <br /> We will also prepare documentation for the app.`,
         icon: 'tabler:code',
       },
       {
-        title: 'Week 7 <br /> <span class="text-sm font-normal">Launch!</span>',
+        title: 'Week 8 <br /> <span class="text-sm font-normal">Launch!</span>',
         description: `If it is not published we will publish site live. <br /> We will configure tracking and analytics. We will work with you to learn how to manage the app.`,
         icon: 'tabler:rocket',
       },
       {
-        title: 'Week 8 <br /> <span class="text-sm font-normal">Optimize</span>',
+        title: 'Weeks 9-12 <br /> <span class="text-sm font-normal">Optimize</span>',
         description: `While tracking users we will optimize the site for better performance and conversion.<br /> We will also fix any bugs that might have appeared.`,
         icon: 'tabler:bug-off',
       },
