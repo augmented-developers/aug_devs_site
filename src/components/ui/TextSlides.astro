@@ -1,0 +1,38 @@
+---
+interface Props {
+  items: string[];
+  class?: string;
+}
+
+const { items, class: className = '', ...rest } = Astro.props;
+---
+
+<span id="text-cycler" class={`transition-opacity duration-500 ${className}`} {...rest}>
+  {items[0]}
+</span>
+
+<style>
+  #text-cycler {
+    opacity: 1;
+  }
+  #text-cycler.fade-out {
+    opacity: 0;
+  }
+</style>
+
+<script define:vars={{ items }}>
+  const textCycler = document.getElementById('text-cycler');
+  let currentIndex = 0;
+
+  function updateText() {
+    textCycler.classList.add('fade-out');
+
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % items.length;
+      textCycler.textContent = items[currentIndex];
+      textCycler.classList.remove('fade-out');
+    }, 500); // This should match the duration in the CSS transition
+  }
+
+  setInterval(updateText, 2000); // Increased to 2 seconds to account for fade duration
+</script>

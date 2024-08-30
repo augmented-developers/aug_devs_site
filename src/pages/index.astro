@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Offer from '~/components/widgets/HomepageOffer.astro';
-
+import TextSlides from '~/components/ui/TextSlides.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
@@ -33,6 +33,9 @@ const metadata = {
         and <span class="text-accent dark:text-white highlight">advanced AI</span><br />
       </small>
     </Fragment>
+    <!-- <Fragment slot="subtitle">
+      <TextSlides items={['one', 'two', 'three']} class="text-accent" />
+    </Fragment> -->
   </Hero2>
 
   <!-- <Offer /> -->
