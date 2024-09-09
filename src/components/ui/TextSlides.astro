@@ -7,7 +7,7 @@ interface Props {
 const { items, class: className = '', ...rest } = Astro.props;
 ---
 
-<span id="text-cycler" class={`transition-opacity duration-500 ${className}`} {...rest}>
+<span id="text-cycler" class={`transition-opacity duration-1000 ${className}`} {...rest}>
   {items[0]}
 </span>
 
@@ -31,8 +31,8 @@ const { items, class: className = '', ...rest } = Astro.props;
       currentIndex = (currentIndex + 1) % items.length;
       textCycler.textContent = items[currentIndex];
       textCycler.classList.remove('fade-out');
-    }, 500); // This should match the duration in the CSS transition
+    }, 1000); // This should match the duration in the CSS transition
   }
 
-  setInterval(updateText, 2000); // Increased to 2 seconds to account for fade duration
+  setInterval(updateText, 4000); // Increased to 2 seconds to account for fade duration
 </script>
