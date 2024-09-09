@@ -17,8 +17,8 @@ const metadata = {
   <Hero2
     tagline="Offer"
     actions={[
-      { variant: 'primary', text: 'Get Started', href: '/services' },
-      { text: 'Learn more', href: '/method' },
+      { text: 'What is a twist?', href: '#features' },
+      { variant: 'primary', text: 'Book a call', href: '/start' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27',
@@ -27,10 +27,13 @@ const metadata = {
   >
     <Fragment slot="title">
       <small>
-        Make <span class="text-accent dark:text-white highlight">your projects</span> with<br />
-        our <span class="text-accent dark:text-white highlight">expert developers</span>,<br />
-        boosted by <span class="text-accent dark:text-white highlight">superior tools</span><br />
-        and <span class="text-accent dark:text-white highlight">advanced AI</span><br />
+        We
+        <TextSlides
+          items={['ship software in weeks', 'build faster', 'use superior tools and AI', 'are happy developers']}
+          class="text-accent"
+        />
+        <br />
+        With an <span class="text-orange-600">unique twist</span><br />
       </small>
     </Fragment>
     <!-- <Fragment slot="subtitle">
