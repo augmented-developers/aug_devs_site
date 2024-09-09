@@ -3,13 +3,12 @@ import Layout from '~/layouts/PageLayout.astro';
 import { getPermalink, getBlogPermalink, getAsset } from '~/utils/permalinks';
 
 import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Method from '~/components/widgets/MethodProducing.astro';
-import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import LetsStart from '~/components/widgets/LetsStart.astro';
 
 const metadata = {
   title: 'Augmented Developers - Cybernetically Enhanced Web Development',
@@ -76,6 +75,8 @@ const metadata = {
       alt: 'Steps image',
     }}
   />
+
+  <LetsStart />
 
   <BlogLatestPosts
     title="Find out more content in our Blog"
