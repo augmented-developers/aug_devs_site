@@ -1,0 +1,59 @@
+---
+// File: src/components/PaymentWidget.astro
+
+interface PaymentOption {
+  name: string;
+  description: string;
+  url: string;
+  payment: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  items: PaymentOption[];
+  usage: string[];
+}
+
+const { title, description, items, usage } = Astro.props;
+---
+
+<div class="payment-widget w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="p-6 sm:p-8">
+      <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">{title}</h2>
+      <p class="text-xl text-gray-600 mb-8">{description}</p>
+      <div class="space-y-6">
+        {
+          items.map((item) => (
+            <div class="border rounded-lg p-6 flex flex-col">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">{item.name}</h3>
+              <p class="text-gray-600 mb-4 flex-grow">{item.description}</p>
+              <div class="flex justify-end">
+                <a
+                  href={item.url}
+                  class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded transition duration-300 ease-in-out text-center"
+                >
+                  Select - {item.payment}
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      {
+        usage && usage.length > 0 && (
+          <div class="mt-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Example Usage</h3>
+            <ul class="list-disc list-inside space-y-2">
+              {usage.map((item) => (
+                <li class="text-gray-600">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</div>

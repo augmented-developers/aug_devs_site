@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import PricingSection from '~/components/widgets/PricingSection.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import LetsStart from '~/components/widgets/LetsStart.astro';
+import PaymentWidget from '~/components/widgets/PaymentWidget.astro';
 
 const metadata = {
   title: 'Services',
@@ -59,6 +60,41 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
+  />
+  <PaymentWidget
+    title="General Dev Service"
+    description="Expert development services tailored to your needs"
+    items={[
+      {
+        name: 'One week work',
+        description:
+          'Ideal for small projects or quick fixes. Get a week of dedicated development time to address your immediate needs and bring your ideas to life quickly. Perfect for MVP development, bug fixes, or adding small features to existing projects.',
+        url: 'https://stripe.com/1',
+        payment: '$95 per week',
+      },
+      {
+        name: 'Two week work',
+        description:
+          'Perfect for medium-sized projects. Two weeks of focused development to create more complex features, refine your product, or tackle multiple small projects. Suitable for building robust applications, implementing advanced functionality, or conducting thorough code reviews and optimizations.',
+        url: 'https://stripe.com/2',
+        payment: '$180 per two weeks',
+      },
+      {
+        name: 'One month project',
+        description:
+          'Comprehensive development package for larger projects. Full month of dedicated work to create something amazing, from concept to deployment, with thorough testing and refinement. Ideal for building complex web applications, developing custom software solutions, or undertaking major platform migrations with extensive testing and documentation.',
+        url: 'https://stripe.com/3',
+        payment: '$350 per month',
+      },
+    ]}
+    usage={[
+      'Build a responsive website',
+      'Develop a custom e-commerce solution',
+      'Create a mobile app prototype',
+      'Implement a content management system',
+      'Optimize website performance',
+      'Integrate third-party APIs',
+    ]}
   />
 
   <PricingSection
