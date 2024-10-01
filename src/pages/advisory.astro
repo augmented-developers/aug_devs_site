@@ -1,0 +1,179 @@
+---
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import PricingSection from '~/components/widgets/PricingSection.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Techical Advisory Coaching',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Your MVP, done by MVPs"
+    image={{
+      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      Develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
+      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
+    </Fragment>
+  </Hero>
+
+  <Features3
+    title="General terms and conditions"
+    subtitle="Simple rules to help us focus on delivering the best possible product for you."
+    columns={2}
+    items={[
+      {
+        title: 'Price',
+        description:
+          'We charge in advance for 2 week sprint. The price is fixed and will not change during the project. You are expected to pay ahead of every sprint.',
+        icon: 'tabler:premium-rights',
+      },
+      {
+        title: 'Schedule',
+        description:
+          'We will schedule sprints to happen when you are ready to recieve work. If at any point you are want to stop work or are late with funding, we will stop and then restart can happen when we have slots available.',
+        icon: 'tabler:calendar-month',
+      },
+      {
+        title: 'Start and end',
+        description:
+          'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Feedback',
+        description:
+          'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
+        icon: 'tabler:rotate',
+      },
+      {
+        title: 'Status update',
+        description:
+          'We will provide updates on completed work and progress daily through chat or email update. We can have brief status update meeting on end of first week of sprint and on end of sprint you will be able to see work demoed.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Workshops',
+        description:
+          'During work week, when we need to think through features or review something that needs more focused feedback, we will organize workshops. Those will be different kinds and depending on work and topic we need to clarify or decide.',
+        icon: 'tabler:rotate',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <PricingSection
+    id="MVP"
+    title="Code & Coaching - MVP in 90 days"
+    subtitle="Me and my team will work with you to define and refine your idea into succesful product. We will follow our process as outlined in The Method to develop your MVP. We will launch it in 60 days and continue to tweak and work on it for another 30 days post launch."
+    url="/start"
+  >
+    <table class="w-full">
+      <tr>
+        <th>Weeks</th>
+        <th>Price per Week</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>4 weeks of prototyping, UI and design</td>
+        <td>$3,500</td>
+        <td>$14K</td>
+      </tr>
+      <tr>
+        <td>6 weeks of development (pair of developers)</td>
+        <td>$6,500</td>
+        <td>$39K</td>
+      </tr>
+      <tr>
+        <td>4 weeks for launch and optimizing</td>
+        <td>$1,200</td>
+        <td>$4,8K</td>
+      </tr>
+      <tr>
+        <td>8 planned workshops (+ as many ad-hoc as we need)</td>
+        <td>$650</td>
+        <td>$5,2K</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>$63,2K</strong></td>
+      </tr>
+      <tr class="h-8 text-xl">
+        <td colspan="2"><strong>Package price</strong></td>
+        <td><strong>$49.5K</strong></td>
+      </tr>
+    </table>
+  </PricingSection>
+
+  <br /><br /><br /><br /><br />
+
+  <Steps
+    id="play-by-play"
+    title="Week by week"
+    items={[
+      {
+        title: 'Week 1 <br /> <span class="text-sm font-normal">Prototyping</span>',
+        description: `We will start with a planning session to understand your business and your goals. <br /> We will then create wireframes and prototypes to help you visualize the product.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Week 2 <br /> <span class="text-sm font-normal">UI design</span>',
+        description: `We will create a design system and apply it to the wireframes. <br /> We will also create a style guide to help us stay consistent.`,
+        icon: 'tabler:vector-triangle',
+      },
+      {
+        title: 'Week 3 <br /> <span class="text-sm font-normal">Development</span>',
+        description: `Wire in login and user authentication, database model and admin panel to manage data.`,
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Week 4 <br /> <span class="text-sm font-normal">Feature development</span>',
+        description: `In this week we will focus on feature that makes your idea unique.`,
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Week 5 &amp; 6 <br /> <span class="text-sm font-normal">Feature development</span>',
+        description: `Continue working on main feature of the application.`,
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Week 7 <br /> <span class="text-sm font-normal">Finish development work</span>',
+        description: `We will finish all development work and prepare for launch. <br /> We will also prepare documentation for the app.`,
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Week 8 <br /> <span class="text-sm font-normal">Launch!</span>',
+        description: `If it is not published we will publish site live. <br /> We will configure tracking and analytics. We will work with you to learn how to manage the app.`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Weeks 9-12 <br /> <span class="text-sm font-normal">Optimize</span>',
+        description: `While tracking users we will optimize the site for better performance and conversion.<br /> We will also fix any bugs that might have appeared.`,
+        icon: 'tabler:bug-off',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <Hero actions={[{ variant: 'primary', text: 'Book a call', href: '/services' }]}>
+    <Fragment slot="title"> MVP Package </Fragment>
+
+    <Fragment slot="subtitle">
+      We've carefully structured week-by-week activities to ensure the timely delivery of everything included in your
+      package. Keep in mind that you're investing in our dedicated time, and should you wish to prioritize certain
+      features or allocate more time to them, you have the option to extend the project duration by purchasing
+      additional weeks.
+    </Fragment>
+  </Hero>
+
+  <br /><br /><br /><br /><br />
+</Layout>
