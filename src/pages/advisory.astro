@@ -1,5 +1,4 @@
 ---
-import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import PricingSection from '~/components/widgets/PricingSection.astro';
@@ -14,19 +13,16 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Your MVP, done by MVPs"
+    tagline="Your Strategic Advisor and Mentor"
     image={{
       src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f',
       alt: 'Caos Image',
     }}
   >
-    <Fragment slot="title">
-      Develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
-      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
-    </Fragment>
+    <Fragment slot="title">Tech Strategy & Leadership Coaching</Fragment>
   </Hero>
 
-  <PricingSection id="JTC" title="For CTOs, Tech Leads, and Technologists" url="/start" offer="advisory">
+  <PricingSection id="JTC" title="For CTOs, Tech Leads, and Technologists" url="/start">
     <Fragment slot="explain">
       <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
         <h2 class="text-2xl font-bold text-gray-800 mb-4">Techical Advisory Coaching</h2>
@@ -76,7 +72,7 @@ const metadata = {
     </table>
   </PricingSection>
 
-  <br /><br /><br /><br /><br />
+  <!-- <br /><br /><br /><br /><br />
 
   <Steps
     id="play-by-play"
@@ -124,16 +120,13 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  /> -->
 
   <Hero actions={[{ variant: 'primary', text: 'Book a call', href: '/services' }]}>
-    <Fragment slot="title"> MVP Package </Fragment>
+    <Fragment slot="title">Tech Strategy & Leadership Coaching</Fragment>
 
     <Fragment slot="subtitle">
-      We've carefully structured week-by-week activities to ensure the timely delivery of everything included in your
-      package. Keep in mind that you're investing in our dedicated time, and should you wish to prioritize certain
-      features or allocate more time to them, you have the option to extend the project duration by purchasing
-      additional weeks.
+      Help is just a call away. Get the clarity and support you need to lead with confidence and deliver with impact.
     </Fragment>
   </Hero>
 
