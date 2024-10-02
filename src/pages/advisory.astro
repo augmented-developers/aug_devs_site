@@ -26,90 +26,52 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <Features3
-    title="General terms and conditions"
-    subtitle="Simple rules to help us focus on delivering the best possible product for you."
-    columns={2}
-    items={[
-      {
-        title: 'Price',
-        description:
-          'We charge in advance for 2 week sprint. The price is fixed and will not change during the project. You are expected to pay ahead of every sprint.',
-        icon: 'tabler:premium-rights',
-      },
-      {
-        title: 'Schedule',
-        description:
-          'We will schedule sprints to happen when you are ready to recieve work. If at any point you are want to stop work or are late with funding, we will stop and then restart can happen when we have slots available.',
-        icon: 'tabler:calendar-month',
-      },
-      {
-        title: 'Start and end',
-        description:
-          'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also have a demo of the work done.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Feedback',
-        description:
-          'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
-        icon: 'tabler:rotate',
-      },
-      {
-        title: 'Status update',
-        description:
-          'We will provide updates on completed work and progress daily through chat or email update. We can have brief status update meeting on end of first week of sprint and on end of sprint you will be able to see work demoed.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Workshops',
-        description:
-          'During work week, when we need to think through features or review something that needs more focused feedback, we will organize workshops. Those will be different kinds and depending on work and topic we need to clarify or decide.',
-        icon: 'tabler:rotate',
-      },
-    ]}
-    classes={{ container: 'max-w-5xl' }}
-  />
+  <PricingSection id="JTC" title="For CTOs, Tech Leads, and Technologists" url="/start" offer="advisory">
+    <Fragment slot="explain">
+      <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Techical Advisory Coaching</h2>
+        <p class="text-lg text-gray-700 mb-4">
+          You don’t need more code; you need strategic advice and clear direction. With biweekly strategy sessions, I’ll
+          be your active advisor and mentor helping you navigate business, technology, and personal challenges. We’ll
+          discuss your project’s architecture, your team, and your tech strategy in a way that tackles both high-level
+          decisions and day-to-day obstacles.
+        </p>
 
-  <PricingSection
-    id="MVP"
-    title="Code & Coaching - MVP in 90 days"
-    subtitle="Me and my team will work with you to define and refine your idea into succesful product. We will follow our process as outlined in The Method to develop your MVP. We will launch it in 60 days and continue to tweak and work on it for another 30 days post launch."
-    url="/start"
-  >
+        <p class="text-lg text-gray-700 mb-4">
+          If you’re feeling stuck or overwhelmed, these sessions will give you the clarity and support needed to move
+          forward with confidence. As an action coach, I focus on overcoming roadblocks, simplifying complex processes,
+          and driving results. Together, we’ll ensure you have more time, reduce stress, and increase productivity—so
+          you can focus on what really matters: leading and delivering with impact.
+        </p>
+
+        <h3 class="text-lg font-bold mb-4">Focus Areas ↓</h3>
+
+        <ul class="list-disc list-inside text-lg text-gray-700 mb-4">
+          <li><strong>Strategic clarity</strong> for your technology roadmap and decision-making.</li>
+          <li>A <strong>high-level perspective</strong> on your team’s performance and project architecture.</li>
+          <li>
+            <strong>Overcome roadblocks</strong> with actionable advice on both technical and leadership challenges.
+          </li>
+          <li><strong>Boost productivity</strong> by simplifying complex processes and workflows.</li>
+          <li><strong>Reduce stress</strong> with clear guidance and structured approaches to problem-solving.</li>
+          <li><strong>Develop leadership skills</strong> to manage team dynamics and improve collaboration.</li>
+          <li>Receive <strong>tailored advice</strong> based on your unique challenges and goals.</li>
+          <li>Ensure <strong>team alignment</strong> with broader business objectives for better project outcomes.</li>
+          <li><strong>Increase focus</strong> by removing distractions and addressing high-priority tasks.</li>
+          <li>Enhance <strong>time management</strong> to balance leadership responsibilities and personal life.</li>
+          <li>Build a <strong>proactive approach</strong> to problem-solving for long-term success.</li>
+          <li>Stay <strong>accountable</strong> with regular biweekly check-ins to track progress.</li>
+          <li><strong>Grow personally</strong> as you balance professional growth with personal development.</li>
+          <li>Make <strong>confident decisions</strong> with expert mentorship supporting your choices.</li>
+          <li>Free up resources to focus on delivering <strong>meaningful impact</strong> and leading effectively.</li>
+        </ul>
+      </section>
+    </Fragment>
+
     <table class="w-full">
       <tr>
-        <th>Weeks</th>
-        <th>Price per Week</th>
-        <th>Total</th>
-      </tr>
-      <tr>
-        <td>4 weeks of prototyping, UI and design</td>
-        <td>$3,500</td>
-        <td>$14K</td>
-      </tr>
-      <tr>
-        <td>6 weeks of development (pair of developers)</td>
-        <td>$6,500</td>
-        <td>$39K</td>
-      </tr>
-      <tr>
-        <td>4 weeks for launch and optimizing</td>
-        <td>$1,200</td>
-        <td>$4,8K</td>
-      </tr>
-      <tr>
-        <td>8 planned workshops (+ as many ad-hoc as we need)</td>
-        <td>$650</td>
-        <td>$5,2K</td>
-      </tr>
-      <tr>
-        <td colspan="2"><strong>Total</strong></td>
-        <td><strong>$63,2K</strong></td>
-      </tr>
-      <tr class="h-8 text-xl">
-        <td colspan="2"><strong>Package price</strong></td>
-        <td><strong>$49.5K</strong></td>
+        <td class="text-xl font-bold">Monthly</td>
+        <td class="text-xl font-bold">$2,000/mo</td>
       </tr>
     </table>
   </PricingSection>
