@@ -1,5 +1,4 @@
-Can you take article you written about using habit tracker and create article in markdown with following format:
-
+Using template below, let's write this article from perspective of Jake in friendly tone of seasoned expert.
 ---
 publishDate: {current date in format like this 2024-08-20T00:00:00Z}
 title: "{article title}"
