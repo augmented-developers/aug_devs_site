@@ -6,6 +6,8 @@ import Features from '~/components/widgets/Features.astro';
 import TextSlides from '~/components/ui/TextSlides.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import LetsStart from '~/components/widgets/LetsStart.astro';
+import Image from '~/components/common/Image.astro';
+import techWeLove from '~/assets/images/tech-we-love.png';
 
 const metadata = {
   title: 'Augmented Developers',
@@ -98,11 +100,6 @@ const metadata = {
           "All the designs, code and documentation are always yours, you have access to it since day one and we don't play games or try to lock you in.",
         icon: 'tabler:devices-pc',
       },
-      // {
-      //   title: 'We are humble',
-      //   description: ``,
-      //   icon: 'tabler:number-1',
-      // },
       {
         title: 'We are the best!',
         description: ``,
@@ -110,6 +107,11 @@ const metadata = {
       },
     ]}
   />
+  <div class="flex items-center justify-center min-h-screen mx-4">
+    <div class="bg-blue-300 p-6 rounded-lg shadow-md">
+      <Image src={techWeLove} alt="Tech We Love" />
+    </div>
+  </div>
 
   <LetsStart />
 
