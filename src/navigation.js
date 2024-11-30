@@ -44,7 +44,7 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'General Development', href: '/services#GDS' },
+        { text: 'General Development', href: '/services#development-packages' },
         { text: 'MVP in 90 days', href: '/services#MVP' },
         // { text: 'Micro Saas', href: '/services#Micro-Saas' },
         // { text: 'Corporate Site', href: '/services#Website' },
