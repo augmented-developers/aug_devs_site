@@ -77,10 +77,39 @@ const metadata = {
   />
   <!-- Development Packages ******************* -->
   <section id="development-packages">
-    <h2 class="text-3xl font-bold text-center my-8">Development Packages</h2>
     <PaymentWidget
       title="Comprehensive Development Services"
       description="Our full-service agency offers design, UX, development, marketing, SEO, and more. Ideal for ongoing projects and continuous development. Feed the backlog and watch your project progress."
+      items={[
+        {
+          name: 'Essential Care (S)',
+          description:
+            'Reliable ongoing support for maintenance, updates, and small-scale tasks. Ideal for keeping your project running smoothly and updated with the latest needs.',
+          url: '/start',
+          payment: '$995 per week',
+        },
+        {
+          name: 'Pair Dev (M)',
+          description:
+            'A focused two-person team for MVP creation and small-scale projects, delivering design and development expertise in a compact, agile package.',
+          url: '/start',
+          payment: '$2450 per week',
+        },
+        {
+          name: 'Core Build Team (L)',
+          description:
+            'A dedicated team of developers and strategists collaborating to deliver high-quality, scalable solutions for medium to large projects. Perfect for startups and businesses ready to scale.',
+          url: '/start',
+          payment: '$4000 per week',
+        },
+        {
+          name: 'Full-Scale Execution (XL)',
+          description:
+            'Comprehensive full-time team engagement for complex, high-stakes projects requiring end-to-end development, robust testing, and ongoing refinement.',
+          url: '/start',
+          payment: '$8000 per week',
+        },
+      ]}
       items={[
         {
           name: 'Simple Focus (S)',
@@ -124,7 +153,6 @@ const metadata = {
 
   <!-- MVP Development ******************* -->
   <section id="mvp-development">
-    <h2 class="text-3xl font-bold text-center my-8">MVP Development</h2>
     <PricingSection
       id="MVP"
       title="Code & Coaching - MVP in 90 Days"
@@ -182,7 +210,6 @@ const metadata = {
 
   <!-- Technical Coaching ******************* -->
   <section id="technical-coaching">
-    <h2 class="text-3xl font-bold text-center my-8">Technical Coaching</h2>
     <PricingSection id="JTC" title="Technical Advisory Coaching" url="/start" offer="advisory">
       <Fragment slot="explain">
         <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
@@ -239,7 +266,5 @@ const metadata = {
       </Fragment>
     </PricingSection>
   </section>
-  <LetsStart /> 
+  <LetsStart />
 </Layout>
-
-
