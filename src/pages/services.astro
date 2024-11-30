@@ -32,49 +32,43 @@ const metadata = {
   </Hero>
 
   <!-- Navigation Section ******************* -->
-  <nav class="my-8">
+  <!-- <nav class="my-8">
     <ul class="flex justify-center space-x-4">
       <li><a href="#terms" class="text-accent dark:text-white">Terms</a></li>
       <li><a href="#development-packages" class="text-accent dark:text-white">Development Packages</a></li>
       <li><a href="#mvp-development" class="text-accent dark:text-white">MVP Development</a></li>
       <li><a href="#technical-coaching" class="text-accent dark:text-white">Technical Coaching</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
-  <!-- General Terms and Conditions ******************* -->
-  <Features3
-    id="terms"
-    title="General Terms and Conditions"
-    subtitle="Experience the Benefits of Our Plans"
-    columns={2}
-    items={[
-      {
-        title: 'Transparent Pricing',
-        description:
-          'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
-        icon: 'tabler:premium-rights',
-      },
-      {
-        title: 'Flexible Scheduling',
-        description:
-          'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
-        icon: 'tabler:calendar-month',
-      },
-      {
-        title: 'Structured Process',
-        description:
-          'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Continuous Feedback',
-        description:
-          'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
-        icon: 'tabler:rotate',
-      },
-    ]}
-    classes={{ container: 'max-w-5xl' }}
-  />
+  <!-- MVP Development ******************* -->
+  <section id="mvp-development">
+    <PricingSection
+      id="MVP"
+      title="Code & Mentoring - MVP in 90 Days"
+      subtitle="Transform your idea into a successful product with our comprehensive MVP development program. Our team will guide you through every step, from initial concept to post-launch optimization."
+      offer="/offer-mvp"
+      url="/start"
+    >
+      <table class="w-full">
+        <tr class="h-8 text-xl">
+          <td colspan="2"><strong>Package Price</strong></td>
+          <td><strong>$45.0K</strong></td>
+        </tr>
+      </table>
+      <p class="text-lg text-gray-700 mt-4">
+        Our MVP program includes detailed planning sessions, regular progress updates, and post-launch support to ensure
+        your product's success. You will receive a collaborative approach with clear milestones and deliverables at each
+        stage, ensuring transparency and alignment with your vision.
+      </p>
+      <p class="text-lg text-gray-700 mt-4">
+        <strong>Client Testimonial:</strong> "Working with this team was a game-changer for our startup. They helped us turn
+        our idea into a fully functional MVP in less then 90 days. The process was smooth, and their expertise was invaluable."
+        - Jane Doherty, CEO of Stealth Startup
+      </p>
+    </PricingSection>
+  </section>
+
   <!-- Development Packages ******************* -->
   <section id="development-packages">
     <PaymentWidget
@@ -151,33 +145,40 @@ const metadata = {
     />
   </section>
 
-  <!-- MVP Development ******************* -->
-  <section id="mvp-development">
-    <PricingSection
-      id="MVP"
-      title="Code & Coaching - MVP in 90 Days"
-      subtitle="Transform your idea into a successful product with our comprehensive MVP development program. Our team will guide you through every step, from initial concept to post-launch optimization."
-      offer="/offer-mvp"
-      url="/start"
-    >
-      <table class="w-full">
-        <tr class="h-8 text-xl">
-          <td colspan="2"><strong>Package Price</strong></td>
-          <td><strong>$45.0K</strong></td>
-        </tr>
-      </table>
-      <p class="text-lg text-gray-700 mt-4">
-        Our MVP program includes detailed planning sessions, regular progress updates, and post-launch support to ensure
-        your product's success. You will receive a collaborative approach with clear milestones and deliverables at each
-        stage, ensuring transparency and alignment with your vision.
-      </p>
-      <p class="text-lg text-gray-700 mt-4">
-        <strong>Client Testimonial:</strong> "Working with this team was a game-changer for our startup. They helped us turn
-        our idea into a fully functional MVP in less then 90 days. The process was smooth, and their expertise was invaluable."
-        - Jane Doherty, CEO of Stealth Startup
-      </p>
-    </PricingSection>
-  </section>
+  <!-- General Terms and Conditions ******************* -->
+  <Features3
+    id="terms"
+    title="General Terms and Conditions"
+    subtitle="Experience the Benefits of Our Plans"
+    columns={2}
+    items={[
+      {
+        title: 'Transparent Pricing',
+        description:
+          'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
+        icon: 'tabler:premium-rights',
+      },
+      {
+        title: 'Flexible Scheduling',
+        description:
+          'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
+        icon: 'tabler:calendar-month',
+      },
+      {
+        title: 'Structured Process',
+        description:
+          'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Continuous Feedback',
+        description:
+          'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
+        icon: 'tabler:rotate',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
 
   <!-- Technical Coaching ******************* -->
   <!-- <section id="technical-coaching">
