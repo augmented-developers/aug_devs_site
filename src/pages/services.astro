@@ -15,81 +15,84 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Creating new business online"
+    tagline="Transforming Your Business Online"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd',
-      alt: 'Caos Image',
+      alt: 'Business Transformation Image',
     }}
   >
     <Fragment slot="title">
-      We will develop your <span class="text-accent dark:text-white highlight">business idea</span>,<br />
-      launch it in <span class="text-accent dark:text-white highlight">90 days</span>
+      Bring your <span class="text-accent dark:text-white highlight">business idea</span> to life,<br />
+      launch it in just <span class="text-accent dark:text-white highlight">90 days</span>
     </Fragment>
 
-    <Fragment slot="subtitle"> Check our packages or hire us ongoing to develop your project </Fragment>
+    <Fragment slot="subtitle">
+      Explore our packages or hire us for ongoing development to bring your project to fruition.
+    </Fragment>
   </Hero>
 
   <Features3
-    title="General terms and conditions"
-    subtitle="Discover the advantages of choosing our plans"
+    title="General Terms and Conditions"
+    subtitle="Experience the Benefits of Our Plans"
     columns={2}
     items={[
       {
-        title: 'Price',
+        title: 'Transparent Pricing',
         description:
-          'We charge in advance for 2 week sprint. The price is fixed and will not change during the project. You are expected to pay ahead of every sprint.',
+          'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
         icon: 'tabler:premium-rights',
       },
       {
-        title: 'Schedule',
+        title: 'Flexible Scheduling',
         description:
-          'We will schedule sprints to happen when you are ready to recieve work. If at any point you are want to stop work or are late with funding, we will stop and then restart can happen when we have slots available.',
+          'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
         icon: 'tabler:calendar-month',
       },
       {
-        title: 'Start and end',
+        title: 'Structured Process',
         description:
-          'We will start sprint with planning session (IPM) and finish it with brief retrospective. We will also demo of the work done.',
+          'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
         icon: 'tabler:refresh',
       },
       {
-        title: 'Feedback',
+        title: 'Continuous Feedback',
         description:
-          'During the sprint we will often have partial work or features ready. It is helpful if you can take a look at them and provide feedback as soon as possible. This will help us to adjust the work to your needs.',
+          'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
         icon: 'tabler:rotate',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
   />
+
   <PaymentWidget
-    title="General Dev Service"
-    description="Full service agency at your disposal, design, UX, development, marketing, SEO, and more. Ideal for ongoing projects and continuous development. Feed the backlog and see the progress."
+    title="Comprehensive Development Services"
+    description="Our full-service agency offers design, UX, development, marketing, SEO, and more. Ideal for ongoing projects and continuous development. Feed the backlog and watch your project progress."
     items={[
       {
-        name: 'Simple focus (S)',
+        name: 'Simple Focus (S)',
         description:
-          'Ideal for small projects or quick fixes. We will work on single task at the time. Perfect for casual MVP development, bug fixes, or adding small features to existing projects.',
+          'Perfect for small projects or quick fixes. We focus on one task at a time, ideal for casual MVP development, bug fixes, or adding small features to existing projects.',
         url: '/start',
         payment: '$995 per week',
       },
       {
         name: 'Regular Engagement (M)',
         description:
-          'Perfect for MVP development, smaller projects that have demands for design and code. Two weeks of focused development to create more complex features, refine your product, or tackle multiple small projects. Suitable for building robust applications, implementing advanced functionality, or conducting thorough code reviews and optimizations.',
+          'Ideal for MVP development and smaller projects requiring design and code. Two weeks of focused development to create complex features, refine your product, or tackle multiple small projects.',
         url: '/start',
-        payment: '$2450 per weeks',
+        payment: '$2450 per week',
       },
       {
-        name: 'Dev team focus (dev pair) (L)',
+        name: 'Dev Team Focus (L)',
         description:
-          'Comprehensive development package for larger projects. Full team dedicated to work to create something amazing, from concept to deployment, with thorough testing and refinement. Ideal for building complex web applications, developing custom software solutions, or undertaking major platform migrations with extensive testing and documentation.',
+          'A comprehensive package for larger projects. A full team dedicated to creating something amazing, from concept to deployment, with thorough testing and refinement.',
         url: '/start',
         payment: '$4000 per week',
       },
       {
-        name: 'Full team, full time (dev pair) (XL)',
+        name: 'Full Team, Full Time (XL)',
         description:
-          'Comprehensive development package for larger projects. Full team dedicated to work to create something amazing, from concept to deployment, with thorough testing and refinement. Ideal for building complex web applications, developing custom software solutions, or undertaking major platform migrations with extensive testing and documentation.',
+          'Our most extensive package for large-scale projects. A full team working full-time to deliver exceptional results, from concept to deployment, with extensive testing and documentation.',
         url: '/start',
         payment: '$8000 per week',
       },
@@ -106,8 +109,8 @@ const metadata = {
 
   <PricingSection
     id="MVP"
-    title="Code & Coaching - MVP in 90 days"
-    subtitle="Me and my team will work with you to define and refine your idea into succesful product. We will follow our process as outlined in The Method to develop your MVP. We will launch it in 60 days and continue to tweak and work on it for another 30 days post launch."
+    title="Code & Coaching - MVP in 90 Days"
+    subtitle="Our team will work with you to define and refine your idea into a successful product. Following our proven process, we will develop your MVP, launch it in 60 days, and continue to optimize it for another 30 days post-launch."
     offer="/offer-mvp"
     url="/start"
   >
@@ -118,7 +121,7 @@ const metadata = {
         <th>Total</th>
       </tr>
       <tr>
-        <td>4 weeks of prototyping, UI and design</td>
+        <td>4 weeks of prototyping, UI, and design</td>
         <td>$3,500</td>
         <td>$14K</td>
       </tr>
@@ -128,41 +131,41 @@ const metadata = {
         <td>$39K</td>
       </tr>
       <tr>
-        <td>4 weeks for launch and optimizing</td>
+        <td>4 weeks for launch and optimization</td>
         <td>$1,200</td>
-        <td>$4,8K</td>
+        <td>$4.8K</td>
       </tr>
       <tr>
-        <td>8 planned workshops (+ as many ad-hoc as we need)</td>
+        <td>8 planned workshops (+ as many ad-hoc as needed)</td>
         <td>$650</td>
-        <td>$5,2K</td>
+        <td>$5.2K</td>
       </tr>
       <tr>
         <td colspan="2"><strong>Total</strong></td>
-        <td><strong>$63,2K</strong></td>
+        <td><strong>$63.2K</strong></td>
       </tr>
       <tr class="h-8 text-xl">
-        <td colspan="2"><strong>Package price</strong></td>
+        <td colspan="2"><strong>Package Price</strong></td>
         <td><strong>$49.5K</strong></td>
       </tr>
     </table>
   </PricingSection>
 
-  <PricingSection id="JTC" title="Techical Advisory Coaching" url="/start" offer="advisory">
+  <PricingSection id="JTC" title="Technical Advisory Coaching" url="/start" offer="advisory">
     <Fragment slot="explain">
       <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
         <h2 class="text-2xl font-bold text-gray-800 mb-4">For CTOs, Tech Leads, and Technologists</h2>
         <p class="text-lg text-gray-700 mb-4">
           You don’t need more code; you need strategic advice and clear direction. With biweekly strategy sessions and
-          on demand workshops, I’ll be your active advisor and mentor helping you navigate business, technology, and
-          personal challenges. We’ll discuss your project’s architecture, your team, and your tech strategy in a way
-          that tackles both high-level decisions and day-to-day obstacles.
+          on-demand workshops, I’ll be your active advisor and mentor, helping you navigate business, technology, and
+          personal challenges. We’ll discuss your project’s architecture, your team, and your tech strategy to tackle
+          both high-level decisions and day-to-day obstacles.
         </p>
 
         <p class="text-lg text-gray-700 mb-4">
-          If you’re feeling stuck or overwhelmed, these sessions will give you the clarity and support needed to move
+          If you’re feeling stuck or overwhelmed, these sessions will provide the clarity and support needed to move
           forward with confidence. As an action coach, I focus on overcoming roadblocks, simplifying complex processes,
-          and driving results. Together, we’ll ensure you have more time, reduce stress, and increase productivity—so
+          and driving results. Together, we’ll ensure you have more time, reduced stress, and increased productivity—so
           you can focus on what really matters: leading and delivering with impact.
         </p>
       </section>
@@ -176,25 +179,24 @@ const metadata = {
     </table>
   </PricingSection>
 
-  <PricingSection id="AI" title="AI training for techies" url="/start">
+  <PricingSection id="AI" title="AI Training for Techies" url="/start">
     <Fragment slot="explain">
       <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">AI training for codership and leadership</h2>
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">AI Training for Codership and Leadership</h2>
         <p class="text-lg text-gray-700 mb-4">
-          This is new offering that we are developing. We want to provide organizations a structured and clear way how
-          to approach applying AI in development.
+          We are excited to offer a new training program designed to help organizations apply AI in development. This
+          structured and clear approach will guide you through the process of integrating AI into your projects.
         </p>
 
         <p class="text-lg text-gray-700 mb-4">
-          At the moment we are thinking about 3 weeks of training with 3-4 workshops per week. The training will be
-          structured in a way that you will learn how to apply AI in your projects and how to lead AI projects. You will
-          use AI to develop requirements, create prototypes, produce design system, create application structure and
-          logic, you will write code and tests with AI, create database models, and finally AI will also help you
-          organize and plan deployment.
+          The training spans 3 weeks, with 3-4 workshops per week. You will learn how to apply AI in your projects and
+          lead AI initiatives. The curriculum covers developing requirements, creating prototypes, producing design
+          systems, structuring applications, writing code and tests, creating database models, and planning
+          deployments—all with the help of AI.
         </p>
 
         <p class="text-lg text-gray-700 mb-4">
-          It is meant for lead developers and product owners and other senior roles in the organization.
+          This program is ideal for lead developers, product owners, and other senior roles within your organization.
         </p>
       </section>
     </Fragment>
