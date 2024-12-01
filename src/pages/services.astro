@@ -5,6 +5,7 @@ import PricingSection from '~/components/widgets/PricingSection.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import LetsStart from '~/components/widgets/LetsStart.astro';
 import PaymentWidget from '~/components/widgets/PaymentWidget.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
   title: 'Services',
@@ -128,7 +129,6 @@ const metadata = {
           payment: '$1500(M) / $2500(L) per month',
         },
       ]}
-      --
     >
       />
     </PaymentWidget>
@@ -226,5 +226,15 @@ const metadata = {
 
   </section> -->
     <LetsStart />
+
+    <BlogLatestPosts
+      id="blog"
+      title="What does the blog say?"
+      information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and how Augmented Developers can help you do more and make better projects.`}
+    >
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      </Fragment>
+    </BlogLatestPosts>
   </section>
 </Layout>
