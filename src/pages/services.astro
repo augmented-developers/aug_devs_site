@@ -6,6 +6,8 @@ import Layout from '~/layouts/PageLayout.astro';
 import LetsStart from '~/components/widgets/LetsStart.astro';
 import PaymentWidget from '~/components/widgets/PaymentWidget.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Image from '~/components/common/Image.astro';
+import techWeLove from '~/assets/images/tech-we-love.png';
 
 const metadata = {
   title: 'Services',
@@ -80,9 +82,11 @@ const metadata = {
         </li>
       </ul>
       <p class="text-lg text-gray-700 mt-4">
-        <strong>Client Testimonial:</strong> "Working with this team was a game-changer for our startup. They helped us turn
-        our idea into a fully functional MVP in less then 90 days. The process was smooth, and their expertise was invaluable."
-        - Jane Doherty, CEO of Stealth Startup
+        <strong>Client:</strong> "<i
+          >Working with this team was truly a turning point for our startup. In less than 90 days, they brought our idea
+          into reality as a complete and functional MVP. The process was so smooth, and their expertise and guidance
+          made all the difference. We are very thankful for their support!</i
+        >" - Radhika Sharma, CEO, InnovateNow
       </p>
     </PricingSection>
   </section>
@@ -186,9 +190,10 @@ const metadata = {
           This program is ideal for lead developers, product owners, and other senior roles within your organization.
         </p>
         <p class="text-lg text-gray-700 mt-4">
-          <strong>Client Testimonial:</strong> "The AI training program was incredibly insightful. It provided our team with
-          the knowledge and tools needed to effectively integrate AI into our development processes." - Sarah Lee, Product
-          Owner at InnovateTech
+          <strong>Client Testimonial:</strong> "The AI training program was very useful and fun. It gave our team the right
+          knowledge and tools to confidently integrate AI into our development workflows. We learned a lot while enjoying
+          the process, and it has already improved our efficiency in delivering projects." - Michael Harris, Product Owner
+          at InnovateTech
         </p>
       </Fragment>
     </PricingSection>
@@ -222,9 +227,12 @@ const metadata = {
         </tr>
       </table>
     </PricingSection>
-
-
   </section> -->
+
+    <div class="flex items-center justify-center min-h-screen mx-4 md:py-20 max-w-5xl mx-auto">
+      <Image src={techWeLove} alt="Tech We Love" />
+    </div>
+
     <LetsStart />
 
     <BlogLatestPosts
