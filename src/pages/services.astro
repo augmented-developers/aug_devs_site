@@ -57,10 +57,28 @@ const metadata = {
         </tr>
       </table>
       <p class="text-lg text-gray-700 mt-4">
-        Our MVP program includes detailed planning sessions, regular progress updates, and post-launch support to ensure
-        your product's success. You will receive a collaborative approach with clear milestones and deliverables at each
-        stage, ensuring transparency and alignment with your vision.
+        Our MVP program is structured over 12 weeks to ensure comprehensive development and successful launch. Here’s a
+        breakdown of the program:
       </p>
+      <ul class="list-disc list-inside text-lg text-gray-700 mt-4">
+        <li>
+          <strong>Week 1:</strong> Clarifying Vision - Define the project goals, target audience, and key features.
+        </li>
+        <li>
+          <strong>Week 2-3:</strong> Design, UX, and Prototyping - Create initial wireframes and prototypes to visualize
+          the product.
+        </li>
+        <li><strong>Week 3-9:</strong> Development - Begin coding and building the core features of the MVP.</li>
+        <li>
+          <strong>Week 9-10:</strong> Testing - Conduct thorough testing to identify and fix bugs and ensure functionality.
+        </li>
+        <li>
+          <strong>Week 11:</strong> Pre-Launch - Prepare for launch, including final adjustments and marketing strategies.
+        </li>
+        <li>
+          <strong>Week 12:</strong> Launch and Post-Launch Support - Launch the MVP and provide ongoing support and optimization.
+        </li>
+      </ul>
       <p class="text-lg text-gray-700 mt-4">
         <strong>Client Testimonial:</strong> "Working with this team was a game-changer for our startup. They helped us turn
         our idea into a fully functional MVP in less then 90 days. The process was smooth, and their expertise was invaluable."
@@ -78,110 +96,81 @@ const metadata = {
         {
           name: 'Essential Care (S)',
           description:
-            'Reliable ongoing support for maintenance, updates, and small-scale tasks. Ideal for keeping your project running smoothly and updated with the latest needs.',
+            'Reliable ongoing support for maintenance, updates, and small-scale tasks. Ideal for keeping your project running smoothly and updated with the latest needs. Examples include fixing bugs, updating content, implementing minor feature enhancements, and ensuring compatibility with new technologies.',
           url: '/start',
           payment: '$995 per week',
         },
         {
           name: 'Pair Dev (M)',
           description:
-            'A focused two-person team for MVP creation and small-scale projects, delivering design and development expertise in a compact, agile package.',
+            'A focused two-person team for MVP creation and small-scale projects, delivering design and development expertise in a compact, agile package. Examples of tasks include developing core features, implementing user authentication, integrating third-party APIs, creating responsive UI components, conducting code reviews, and optimizing performance.',
           url: '/start',
           payment: '$2450 per week',
         },
         {
           name: 'Core Build Team (L)',
           description:
-            'A dedicated team of developers and strategists collaborating to deliver high-quality, scalable solutions for medium to large projects. Perfect for startups and businesses ready to scale.',
+            'A dedicated team of developers and strategists collaborating to deliver high-quality, scalable solutions for medium to large projects. Perfect for startups and businesses ready to scale. Our team handles comprehensive documentation, creates robust design systems, and posts regular updates to keep you informed. We also provide weekly video summaries of features delivered to ensure transparency and alignment with your goals.',
           url: '/start',
           payment: '$4000 per week',
         },
         {
           name: 'Full-Scale Execution (XL)',
           description:
-            'Comprehensive full-time team engagement for complex, high-stakes projects requiring end-to-end development, robust testing, and ongoing refinement.',
+            'Comprehensive full-time team engagement for complex, high-stakes projects requiring end-to-end development, robust testing, and ongoing refinement. This package includes everything mentioned above but with a more intense focus from a full team dedicated to your project, ensuring maximum efficiency and quality.',
           url: '/start',
           payment: '$8000 per week',
         },
+        {
+          name: 'Marketing Automation & Content',
+          description:
+            'Full LinkedIn, Instagram, and Facebook automation setup and support, including content creation for these platforms. We also handle the setup of funnels and landing pages, as well as email sequences to ensure a seamless marketing strategy. This comprehensive package is designed to maximize your online presence and engagement.',
+          url: '/start',
+          payment: '$1500(M) / $2500(L) per month',
+        },
       ]}
+      --
+    >
+      />
+    </PaymentWidget>
+
+    <!-- General Terms and Conditions ******************* -->
+    <Features3
+      id="terms"
+      title="General Terms and Conditions"
+      subtitle="Experience the Benefits of Our Plans"
+      columns={2}
       items={[
         {
-          name: 'Simple Focus (S)',
+          title: 'Transparent Pricing',
           description:
-            'Perfect for small projects or quick fixes. We focus on one task at a time, ideal for casual MVP development, bug fixes, or adding small features to existing projects. Deliverables include regular updates to ensure transparency and progress tracking.',
-          url: '/start',
-          payment: '$995 per week',
+            'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
+          icon: 'tabler:premium-rights',
         },
         {
-          name: 'Regular Engagement (M)',
+          title: 'Flexible Scheduling',
           description:
-            'Ideal for MVP development and smaller projects requiring design and code. Two weeks of focused development to create complex features, refine your product, or tackle multiple small projects. Deliverables include comprehensive design documents, code reviews, visual change reports and bi-weekly progress meetings.',
-          url: '/start',
-          payment: '$2450 per week',
+            'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
+          icon: 'tabler:calendar-month',
         },
         {
-          name: 'Dev Team Focus (L)',
+          title: 'Structured Process',
           description:
-            'A comprehensive package for larger projects. A full team dedicated to creating something amazing, from concept to deployment, with thorough testing and refinement. Deliverables include full project documentation, extensive testing reports, visual change reports and weekly progress demos.',
-          url: '/start',
-          payment: '$4000 per week',
+            'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
+          icon: 'tabler:refresh',
         },
         {
-          name: 'Full Team, Full Time (XL)',
+          title: 'Continuous Feedback',
           description:
-            'Our most extensive package for large-scale projects. A full team working full-time to deliver exceptional results, from concept to deployment, with extensive testing and documentation. Deliverables include complete project lifecycle management, detailed testing and QA reports, and daily progress updates.',
-          url: '/start',
-          payment: '$8000 per week',
+            'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
+          icon: 'tabler:rotate',
         },
       ]}
-      usage={[
-        'Build a responsive website',
-        'Develop a custom e-commerce solution',
-        'Create a mobile app prototype',
-        'Implement a content management system',
-        'Optimize website performance',
-        'Integrate third-party APIs',
-      ]}
+      classes={{ container: 'max-w-5xl' }}
     />
-  </section>
 
-  <!-- General Terms and Conditions ******************* -->
-  <Features3
-    id="terms"
-    title="General Terms and Conditions"
-    subtitle="Experience the Benefits of Our Plans"
-    columns={2}
-    items={[
-      {
-        title: 'Transparent Pricing',
-        description:
-          'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
-        icon: 'tabler:premium-rights',
-      },
-      {
-        title: 'Flexible Scheduling',
-        description:
-          'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
-        icon: 'tabler:calendar-month',
-      },
-      {
-        title: 'Structured Process',
-        description:
-          'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
-        icon: 'tabler:refresh',
-      },
-      {
-        title: 'Continuous Feedback',
-        description:
-          'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
-        icon: 'tabler:rotate',
-      },
-    ]}
-    classes={{ container: 'max-w-5xl' }}
-  />
-
-  <!-- Technical Coaching ******************* -->
-  <!-- <section id="technical-coaching">
+    <!-- Technical Coaching ******************* -->
+    <!-- <section id="technical-coaching">
     <PricingSection id="JTC" title="Technical Advisory Coaching" url="/start" offer="advisory">
       <Fragment slot="explain">
         <section class="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl">
@@ -238,5 +227,6 @@ const metadata = {
       </Fragment>
     </PricingSection>
   </section> -->
-  <LetsStart />
+    <LetsStart />
+  </section>
 </Layout>
