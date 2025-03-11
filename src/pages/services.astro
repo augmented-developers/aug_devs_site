@@ -41,28 +41,32 @@ const metadata = {
       description="Our full-service agency offers design, UX, development, marketing, SEO, and more. Ideal for ongoing projects and continuous development. Feed the backlog and watch your project progress."
       items={[
         {
-          name: 'Essential Care (S) - Your Peace of Mind',
+          title: 'Essential Care (S)',
+          subtitle: 'Your Peace of Mind',
           description:
-            'Keep your project running smoothly and growing with our Essential Care service. We handle proactive maintenance, fast bug fixes, small feature upgrades, and offer optional monthly Brainstorming & Clarity Workshops to keep your ideas fresh and your project moving forward. With a dedicated support contact, regular progress updates, and quick response times, you’ll have the peace of mind that everything’s under control — so you can focus on what matters most.',
+            'Keep your project running smoothly and growing with our Essential Care service. We handle proactive maintenance, fast bug fixes, small feature upgrades, and offer optional monthly Brainstorming & Clarity Workshops to keep your ideas fresh and your project moving forward. With a dedicated support contact, regular progress updates, and quick response times, you will have the peace of mind that everything is under control - so you can focus on what matters most.',
           url: '/start',
           payment: '$4450/month',
         },
         {
-          name: 'Developer (M) - Agile Development',
+          title: 'Developer (M)',
+          subtitle: 'Agile Development',
           description:
             'Kickstart your new project with the power of dedicated developer paired with AI working to deliver results quickly and efficiently. Our service is perfect for building MVPs, developing core features, and integrating third-party services. Get more features built, see faster progress, and maintain the momentum needed to bring your project to life.',
           url: '/start',
           payment: '$5900 per Sprint ($2950 per week)',
         },
         {
-          name: 'Core Build Team (L) - Your Dedicated Dream Team',
+          title: 'Core Build Team (L)',
+          subtitle: 'Your Dedicated Dream Team',
           description:
             'Scale your project with a dedicated team of developers and strategists focused on delivering high-quality, scalable solutions. Perfect for startups and growing businesses, the Core Build Team handles everything from core feature development and design systems to comprehensive documentation and regular progress updates. Stay aligned with weekly video summaries and transparent communication every step of the way.',
           url: '/start',
           payment: '$11,000 per Sprint ($5500 per week)',
         },
         {
-          name: 'Marketing Automation & Content - Your Growth Engine',
+          title: 'Marketing Automation & Content',
+          subtitle: 'Your Growth Engine',
           description:
             'Boost your online presence with a complete marketing automation system for LinkedIn, Instagram, and Facebook, Youtube and Tiktok are totally fine as well. The Marketing Automation & Content plan includes content creation, funnel setup, landing pages, and email sequences to keep your audience engaged. With everything running on autopilot, you can focus on growth while we handle the rest.',
           url: '/start',
@@ -70,43 +74,43 @@ const metadata = {
         },
       ]}
       usage={[]}
-    >  
-    </PaymentWidget>
-
-    <!-- General Terms and Conditions ******************* -->
-    <Features3
-      id="terms"
-      title="General Terms and Conditions"
-      subtitle="Experience the Benefits of Our Plans"
-      columns={2}
-      items={[
-        {
-          title: 'Transparent Pricing',
-          description:
-            'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
-          icon: 'tabler:premium-rights',
-        },
-        {
-          title: 'Flexible Scheduling',
-          description:
-            'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
-          icon: 'tabler:calendar-month',
-        },
-        {
-          title: 'Structured Process',
-          description:
-            'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
-          icon: 'tabler:refresh',
-        },
-        {
-          title: 'Continuous Feedback',
-          description:
-            'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
-          icon: 'tabler:rotate',
-        },
-      ]}
-      classes={{ container: 'max-w-5xl' }}
     />
+  </section>
+
+  <!-- General Terms and Conditions ******************* -->
+  <Features3
+    id="terms"
+    title="General Terms and Conditions"
+    subtitle="Experience the Benefits of Our Plans"
+    columns={2}
+    items={[
+      {
+        title: 'Transparent Pricing',
+        description:
+          'We charge in advance for each 2-week sprint. The price is fixed and will not change during the project. Payments are required ahead of each sprint.',
+        icon: 'tabler:premium-rights',
+      },
+      {
+        title: 'Flexible Scheduling',
+        description:
+          'We schedule sprints based on your readiness to receive work. If you need to pause or delay funding, we will resume when slots are available.',
+        icon: 'tabler:calendar-month',
+      },
+      {
+        title: 'Structured Process',
+        description:
+          'Each sprint begins with a planning session (IPM) and concludes with a brief retrospective and a demo of the completed work.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Continuous Feedback',
+        description:
+          'We value your feedback on partial work or features during the sprint. Timely feedback helps us adjust and align the work with your needs.',
+        icon: 'tabler:rotate',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
 
     <!-- MVP Development ******************* -->
     <section id="mvp-development">
