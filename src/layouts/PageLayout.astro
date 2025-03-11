@@ -2,7 +2,6 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
 
 import { headerData, footerData } from '~/navigation';
 
@@ -16,9 +15,6 @@ const { metadata } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
-  <!-- <slot name="announcement">
-    <Announcement />
-  </slot> -->
   <slot name="header">
     <Header {...headerData} isSticky showRssFeed showToggleTheme />
   </slot>
@@ -31,19 +27,24 @@ const { metadata } = Astro.props;
 
   <!-- Default Statcounter code for Augmented Developers
 https://augmented-devs.com/ -->
-<script type="text/javascript">
-  var sc_project=12922424; 
-  var sc_invisible=1; 
-  var sc_security="7645f680"; 
+  <script type="text/javascript">
+    var sc_project = 12922424;
+    var sc_invisible = 1;
+    var sc_security = '7645f680';
   </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js"
-  async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics
-  Made Easy - Statcounter" href="https://statcounter.com/"
-  target="_blank"><img class="statcounter"
-  src="https://c.statcounter.com/12922424/0/7645f680/1/"
-  alt="Web Analytics Made Easy - Statcounter"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript
+    ><div class="statcounter">
+      <a title="Web Analytics
+  Made Easy - Statcounter" href="https://statcounter.com/" target="_blank"
+        ><img
+          class="statcounter"
+          src="https://c.statcounter.com/12922424/0/7645f680/1/"
+          alt="Web Analytics Made Easy - Statcounter"
+          referrerPolicy="no-referrer-when-downgrade"
+        /></a
+      >
+    </div></noscript
+  >
   <!-- End of Statcounter Code -->
 </Layout>

@@ -54,7 +54,6 @@ export const footerData = {
     {
       title: 'Resources',
       links: [
-        { text: 'Idea Evaluation Worksheet', href: getPermalink('/idea-ws') },
         { text: 'FAQ', href: getPermalink('/faq') },
         { text: 'Terms', href: getPermalink('/terms') },
         { text: 'Privacy Policy', href: getPermalink('/privacy') },
