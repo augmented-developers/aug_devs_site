@@ -8,15 +8,13 @@ layout: '~/layouts/MarkdownLayout.astro'
 **Augmented Devs** combines **senior product engineers** with an **on-demand, Sprint-based engagement model** to help startups and mid-sized companies build MVPs, integrate AI solutions, and provide full-cycle support.  
 
 ### **Why Choose Us?**
-- **Faster MVP Development:** We deliver MVPs in weeks, not months, by focusing on what is important now. 
+- **Faster MVP Development:** We deliver MVPs in weeks, not months, by focusing on core features. Our process follows a simple, proven flow: **develop idea, prototype, build, launch, and support.**  
 - **AI-Augmented Workflow:** We leverage AI to brainstorm, plan, prototype, assist with coding, create test plans, and generate documentation—boosting efficiency while maintaining quality.  
 - **Best for Creation:** We excel in **greenfield projects** and **MVP development**, making us the ideal partner for launching new products. But we deliver great benefits also on bigger codebases and refactoring projects.
-- **Sprint-Based Execution:** Our process follows a simple, proven flow: 
-  - **develop idea,** 
-  - **prototype,** 
-  - **build,** 
-  - **launch,**
-  - **support**
+- **Sprint-Based Execution:** We use Sprints to focus on high-impact tasks while adapting priorities as the project evolves. Tasks are organized using the **Now, Next, Later** framework:
+    - **Now:** Current Sprint tasks that align with immediate goals.  
+    - **Next:** Upcoming tasks to address in future Sprints.  
+    - **Later:** Longer-term initiatives documented for future planning.  
 - **Full Access and Control:** Clients always have complete access to their code and resources—no vendor lock-in.  
 - **Fair and Transparent Pricing:** Our rates are the same for everyone and they start at **$2.5K per week, billed 2 weeks in advance.**  
 
