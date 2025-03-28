@@ -17,6 +17,7 @@ layout: '~/layouts/MarkdownLayout.astro'
     - **Later:** Longer-term initiatives documented for future planning.  
 - **Full Access and Control:** Clients always have complete access to their code and resources—no vendor lock-in.  
 - **Fair and Transparent Pricing:** Our rates are the same for everyone and they start at **$2.5K per week, billed 2 weeks in advance.**  
+- **US-Based Talent with Global Expansion:** Our current team is **100% US-based**, but as a remote-first company, we are **looking globally** to attract the best talent.
 
 ### **What We Expect from You:**
 - **Frequent Collaboration:** We expect clients to be present and guide our work frequently to ensure alignment and success.  
