@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import TextSlides from '~/components/ui/TextSlides.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -15,14 +15,14 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Hero2
+  <Hero
     tagline="Offer"
     actions={[
       { text: 'What is a twist?', href: '#features' },
       { variant: 'primary', text: 'Book a call', href: '/start' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27',
+      src: '~/assets/images/domenico-loia-EhTcC9sYXsw-unsplash.jpg',
       alt: 'Create More, Consume Less',
     }}
   >
@@ -43,7 +43,7 @@ const metadata = {
         With an <span class="text-orange-600">unique twist</span><br />
       </small>
     </Fragment>
-  </Hero2>
+  </Hero>
 
   <Features
     id="features"
