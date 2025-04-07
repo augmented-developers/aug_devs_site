@@ -36,11 +36,7 @@ const { title, description, items, usage } = Astro.props;
                   <h3 class="text-2xl font-bold text-gray-900">{item.title}</h3>
                   <p class="text-lg text-gray-600 mt-1">{item.subtitle}</p>
                 </div>
-                <div class="font-semibold text-gray-900 whitespace-nowrap mr-8">
-                  {' '}
-                  {/* Using mr-8 to match button position */}
-                  {item.payment}
-                </div>
+                <div class="text-sm font-semibold text-gray-900 whitespace-nowrap mr-8">{item.payment}</div>
               </div>
 
               <div class="flex-grow mb-20">
