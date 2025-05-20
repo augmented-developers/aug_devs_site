@@ -217,6 +217,7 @@ export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' |
   content?: string;
   actions?: string | CallToAction[];
   image?: string | unknown;
+  containerClass?: string; // Added to allow passing a class to the root element
 }
 
 export interface Team extends Omit<Headline, 'classes'>, Widget {
