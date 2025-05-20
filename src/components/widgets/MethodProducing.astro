@@ -25,7 +25,7 @@ const {
     classes={{
       container: 'text-left rtl:text-right',
       title: 'text-3xl lg:text-4xl',
-      ...((classes?.headline as {}) ?? {}),
+      ...((classes?.headline as Record<string, string>) ?? {}),
     }}
   />
   <div class:list={['flex flex-col gap-8 md:gap-12', { 'md:flex-row-reverse': isReversed }, { 'md:flex-row': image }]}>
