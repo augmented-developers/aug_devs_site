@@ -11,7 +11,7 @@ metadata:
   title:
     default: Augmented Developers
     template: '%s — Augmented Devs'
-  description: "Augmented Developers - Cybernetically enhanced development"
+  description: 'Augmented Developers - Cybernetically enhanced development'
   robots:
     index: true
     follow: true

@@ -1,5 +1,5 @@
 ---
-title: "Fractional CTO Guidance: Leverage 20+ Years of Experience to Accelerate Your Startups Growth"
+title: 'Fractional CTO Guidance: Leverage 20+ Years of Experience to Accelerate Your Startups Growth'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 

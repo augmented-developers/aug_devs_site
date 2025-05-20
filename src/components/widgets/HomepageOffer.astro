@@ -33,25 +33,33 @@ if (typeof props.callToAction === 'string') {
   }
 }
 
-const { href, text, ...restCallToActionAttrs } = callToActionProps || { href: undefined, text: undefined }; 
-
+const { href, text, ...restCallToActionAttrs } = callToActionProps || { href: undefined, text: undefined };
 ---
 
-<WidgetWrapper id={props.id} isDark={props.isDark} containerClass={`max-w-5xl ${props.classes?.container ?? ''}`} bg={props.bg}>
+<WidgetWrapper
+  id={props.id}
+  isDark={props.isDark}
+  containerClass={`max-w-5xl ${props.classes?.container ?? ''}`}
+  bg={props.bg}
+>
   <!-- Example items rendering -->
   <div class={`flex ${props.isReversed ? 'flex-row-reverse' : 'flex-row'} gap-8`}>
-    {props.items.map((step) => (
-      <div class="flex-1 text-center">
-        {step.icon && <img src={step.icon} alt="" />}
-        <h4 class="font-bold">{step.title}</h4>
-        {step.description && <p>{step.description}</p>}
-      </div>
-    ))}
+    {
+      props.items.map((step) => (
+        <div class="flex-1 text-center">
+          {step.icon && <img src={step.icon} alt="" />}
+          <h4 class="font-bold">{step.title}</h4>
+          {step.description && <p>{step.description}</p>}
+        </div>
+      ))
+    }
   </div>
   <!-- Example call to action -->
-  {href && (
-    <a href={href} {...restCallToActionAttrs} class="btn mt-4">
-      {text}
-    </a>
-  )}
+  {
+    href && (
+      <a href={href} {...restCallToActionAttrs} class="btn mt-4">
+        {text}
+      </a>
+    )
+  }
 </WidgetWrapper>
