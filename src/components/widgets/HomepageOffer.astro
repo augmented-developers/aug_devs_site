@@ -2,10 +2,42 @@
 import type { Steps } from '~/types';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 
-const props = Astro.props as Steps;
+// Define a more specific type for the callToAction prop
+// Allowing for known HTML anchor attributes and a general [key: string] for others.
+// Explicitly type known attributes and use a more general type for the rest.
+interface CallToActionObject extends Record<string, string | number | boolean | undefined> {
+  href: string;
+  text?: string;
+  target?: string;
+  rel?: string;
+  // Add other common anchor attributes as needed
+}
+
+type CallToAction = CallToActionObject | string;
+
+interface Props extends Steps {
+  callToAction?: CallToAction;
+}
+
+const props = Astro.props as Props;
+
+// Prepare callToAction attributes
+let callToActionProps: CallToActionObject | { href: string; text?: string } | null = null;
+
+if (typeof props.callToAction === 'string') {
+  callToActionProps = { href: props.callToAction, text: 'Start' };
+} else if (props.callToAction) {
+  callToActionProps = { ...props.callToAction }; // Spread to make a mutable copy
+  if (!callToActionProps.text) {
+    callToActionProps.text = 'Start'; // Default text if not provided
+  }
+}
+
+const { href, text, ...restCallToActionAttrs } = callToActionProps || { href: undefined, text: undefined }; 
+
 ---
 
-<WidgetWrapper id={props.id} isDark={props.isDark} containerClass={`max-w-5xl ${props.classes.container ?? ''}`} bg={props.bg}>
+<WidgetWrapper id={props.id} isDark={props.isDark} containerClass={`max-w-5xl ${props.classes?.container ?? ''}`} bg={props.bg}>
   <!-- Example items rendering -->
   <div class={`flex ${props.isReversed ? 'flex-row-reverse' : 'flex-row'} gap-8`}>
     {props.items.map((step) => (
@@ -17,9 +49,9 @@ const props = Astro.props as Steps;
     ))}
   </div>
   <!-- Example call to action -->
-  {typeof Astro.props.callToAction === 'string' ? (
-    <a href={Astro.props.callToAction} class="btn mt-4">Start</a>
-  ) : Astro.props.callToAction ? (
-    <a {...(Astro.props.callToAction as any)} class="btn mt-4">Start</a>
-  ) : null}
+  {href && (
+    <a href={href} {...restCallToActionAttrs} class="btn mt-4">
+      {text}
+    </a>
+  )}
 </WidgetWrapper>
