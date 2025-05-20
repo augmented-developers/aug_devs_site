@@ -20,7 +20,7 @@ const { items, class: className = '', ...rest } = Astro.props;
   }
 </style>
 
-<script define:vars={{ items }}>
+<script is:inline define:vars={{ items }}>
   const textCycler = document.getElementById('text-cycler');
   let currentIndex = 0;
 
