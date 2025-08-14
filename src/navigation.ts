@@ -28,6 +28,7 @@ export const headerData = {
       href: getPermalink('/tldr'),
     },
   ],
+  actions: [{ text: 'Download', href: 'https://github.com/augmented-developers/aug_devs_site', target: '_blank' }],
 };
 
 export const footerData = {
